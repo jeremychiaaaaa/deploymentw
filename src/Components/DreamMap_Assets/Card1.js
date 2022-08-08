@@ -1,0 +1,92 @@
+import React,{useEffect,useState} from 'react'
+import WebFont from 'webfontloader';
+import {motion,AnimatePresence} from 'framer-motion'
+const place = require('./Avatars/web art dreammap bri main v4.png')
+const Card1 = ({onMapClose}) => {
+    const[phone,setPhone] = useState(window.matchMedia("(max-width: 1060px)").matches)
+    useEffect(() => {
+        window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
+        WebFont.load({
+          google: {
+            families: ['Droid Sans', 'Chilanka','Roboto Condensed','Bree Serif','Dosis','Smooch Sans']
+          }
+        });
+       
+       }, )
+       let style={
+        fontWeight:200, fontSize:'1.2rem',fontFamily:'Dosis',color:'black'
+      }
+      let phoneStyle={
+        fontWeight:200, fontSize:'1rem',fontFamily:'Dosis',
+      }
+      let phoneSubHead = {
+        fontWeight:900, fontSize:'1.6rem',fontFamily:'Bree Serif',position:'relative',color:'black',marginTop:'30px'
+      }
+      let phoneSubHeaderStyle = {
+        fontFamily:'Bree Serif', fontSize:'2.2rem', fontWeight:700, color:'white',marginLeft:'25px', marginBottom:'20px'
+      }
+      let subHeaderStyle = {
+        fontFamily:'Dosis', fontSize:'4.4rem', fontWeight:600, color:'white',marginLeft:'10px', alignSelf:'center'
+      }
+      let subHead = {
+        fontWeight:900, fontSize:'1.6rem',fontFamily:'Bree Serif',position:'relative', marginTop:'20px', marginLeft:'0px', letterSpacing:3.4, 
+      }
+  return (
+    <div className='routemap-content-container' style={{width:phone ? '100vw':'100%',display:'flex',justifyContent:!phone && 'center',position:phone ?'relative' : 'absolute',  left:phone ? 0:'50%',    transform:phone ? 'translate(0,190px)' : 'translate(-50%,200px)',top:phone ? '-70px':0 }}>
+                 <div className='routemap-avatar' style={{width:phone ? '70vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',}} >
+        <img src={place} style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone && 'translateY(-180px)'}} />
+        </div>
+            <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'80vh',overflow:'scroll', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
+              
+               <motion.button
+               style={{backgroundColor:'black',width:'100%',fontFamily:'Bree Serif', fontSize:'1.2rem', color:'white',position:'sticky',top:0}}
+               onClick={onMapClose}
+               whileHover={{backgroundColor:'rgba(220,220,220,0.5)',opacity:1, color:'black'}}
+               >
+                BACK TO MAP
+               </motion.button>
+              <div style={{width:phone ? '100vw':'100%', display:'flex', flexDirection:'column', backgroundColor:'white', justifyContent:phone ?'flex-start':'flex-start', alignItems:phone ? 'flex-start' :'center', opacity:0.95, height:phone ? '100vh':'100%', }}>
+                <div style={{marginLeft:phone ? '10%' :'10%',width:'82%'}}>
+                 <h2 style={{...phone ? phoneSubHead : subHead,fontSize:phone ? '1.8rem':'2.3rem',marginTop:phone ? 60 :20}}>KYN's Vision</h2>
+                
+                <div style={{display:'flex', justifyContent:'center', alignItems:'flex-start', flexDirection:'column',width:phone ? '100%':'90%'}}>
+                <span style={{...phone ? phoneStyle : style,}}>To cultivate a supportive, synergistic, wholesome family in a safe space where we grow towards our fullest potential together
+             
+             </span>
+                <h2 style={{...phone ? phoneSubHead : subHead,fontSize:phone ? '1.5rem':'2.3rem'}}>KYN's Guiding Principles</h2>
+                <span style={{...phone ? phoneStyle : style,display:'flex', flexDirection:'column', width:'100%'}}>
+              <span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>1. Community, Community, Community</span>   
+
+<span style={{marginLeft:30}}>Without the community, anything and everything we do will be meaningless. Though
+overused and cliché, community will always be our #1 priority.</span>
+
+<span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>2. Redefine Norms</span>
+
+<span style={{marginLeft:30}}>We choose to stay true to ourselves, even when it goes against the norm. Normalcy
+was never meant for us because we are meant for so much more.  </span>
+
+<span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>3. Endgame Mentality</span>
+
+<span style={{marginLeft:30}}>Always have the end in mind. Never allow yourself to lose sight of the
+bigger picture.</span>
+
+<span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>4. Kaizen</span>
+
+<span style={{marginLeft:30}}>KYNs are always hungry to learn, hungry to grow; always striving to become a better
+version of ourselves than yesterday.</span>
+
+
+
+                </span>
+                </div>
+                        
+
+                
+                </div>
+              </div>
+            </div>
+            </div>
+  )
+}
+
+export default Card1
