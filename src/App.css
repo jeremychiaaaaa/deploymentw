@@ -12,7 +12,7 @@ height:100vh;
 
 .homepage-image {
 
-   background-image: url("General\ Assets/cityProjectsmalltext\ \(1\).jpg");
+   background-image: url("General\ Assets/homepage-2.0.webp");
 
     /* Full height */
 height:100%;
@@ -161,7 +161,7 @@ background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg f
  background-position: center;
 }
 .hamburger-button{
-    display: none;
+    display:none;
 }
   .navBar{
       
