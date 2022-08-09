@@ -30,7 +30,7 @@ export const  ManifestoV2 = React.forwardRef((props,ref) => {
     window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
     WebFont.load({
       google: {
-        families: ['Droid Sans', 'Chilanka','Roboto Condensed','Bree Serif','Dosis']
+        families: ['Bree Serif','Dosis']
       }
     });
     if(context.musicPlay === true){
@@ -186,7 +186,7 @@ To become the best versions of ourselves
                 </div>
       <div style={{display:'flex'}}>
       <div className='manifesto-card-v2-content'>
-        <div style={{marginLeft:'20%',}}>
+        <div style={{marginLeft:'20%',marginTop:20}}>
           
         <div style={{display:'flex', maxWidth:'fit-content', backgroundColor:'black',transition: 'maxWidth 5s infinite'}}>
       <p style={{style,color:'white',fontFamily:'Dosis', fontSize:'1.4rem',padding:'0 10px',margin: "0 4px"}} >We are the &nbsp;<TextTransition inline={true} direction={'down'} style={{}} springConfig={presets.default} >
@@ -219,8 +219,8 @@ To become the best versions of ourselves
     <span>Whatever our past is, it doesn't matter here.</span><br/>
     <span>Here, it's a free start</span><br/>
     <span>Here, we are your Kyn.</span><br/>
-    <span>Here, we are family</span><br/>
-    <span >Welcome to the Sanctuary.</span>
+    <span>Here, we are family</span><br/><br/>
+    <span style={{fontWeight:700,}}>Welcome to the Sanctuary.</span>
 </p>
 </div>
 

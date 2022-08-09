@@ -8,7 +8,7 @@ const Card1 = ({onMapClose}) => {
         window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
         WebFont.load({
           google: {
-            families: ['Droid Sans', 'Chilanka','Roboto Condensed','Bree Serif','Dosis','Smooch Sans']
+            families: ['Bree Serif','Dosis','Smooch Sans']
           }
         });
        
@@ -33,8 +33,8 @@ const Card1 = ({onMapClose}) => {
       }
   return (
     <div className='routemap-content-container' style={{width:phone ? '100vw':'100%',display:'flex',justifyContent:!phone && 'center',position:phone ?'relative' : 'absolute',  left:phone ? 0:'50%',    transform:phone ? 'translate(0,190px)' : 'translate(-50%,200px)',top:phone ? '-70px':0 }}>
-                 <div className='routemap-avatar' style={{width:phone ? '70vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',}} >
-        <img src={place} style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone && 'translateY(-180px)'}} />
+                 <div className='routemap-avatar' style={{width:phone ? '70vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',position:phone && 'absolute', left:phone &&'-110px'}} >
+        <img src={place} style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone && 'translateY(-145px)'}} />
         </div>
             <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'80vh',overflow:'scroll', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
               
@@ -57,14 +57,13 @@ const Card1 = ({onMapClose}) => {
                 <span style={{...phone ? phoneStyle : style,display:'flex', flexDirection:'column', width:'100%'}}>
               <span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>1. Community, Community, Community</span>   
 
-<span style={{marginLeft:30}}>Without the community, anything and everything we do will be meaningless. Though
+<span style={{marginLeft:30}}>Without the community, anything and everything we do will be meaningless. </span>
+<span style={{marginLeft:30,marginTop:10}}>Though
 overused and cliché, community will always be our #1 priority.</span>
-
 <span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>2. Redefine Norms</span>
 
-<span style={{marginLeft:30}}>We choose to stay true to ourselves, even when it goes against the norm. Normalcy
-was never meant for us because we are meant for so much more.  </span>
-
+<span style={{marginLeft:30}}>We choose to stay true to ourselves, even when it goes against the norm.  </span>
+<span style={{marginLeft:30, marginTop:10}}>Normalcy was never meant for us because we are meant for so much more. </span>
 <span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>3. Endgame Mentality</span>
 
 <span style={{marginLeft:30}}>Always have the end in mind. Never allow yourself to lose sight of the
@@ -84,6 +83,7 @@ version of ourselves than yesterday.</span>
                 
                 </div>
               </div>
+        
             </div>
             </div>
   )

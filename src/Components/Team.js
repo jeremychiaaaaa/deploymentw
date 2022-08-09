@@ -17,7 +17,7 @@ function Team() {
  window.matchMedia("(max-width: 10600px)").addEventListener('change', e => setPhone(e.matches))
  WebFont.load({
   google: {
-    families: ['Droid Sans', 'Chilanka','Roboto Condensed', 'Smooch Sans', 'Oswald','PT Sans Narrow','Bree Serif', "Exo", 'Patua One', 'Teko', 'Cuprum', 'Share', 'Jockey One','Dosis','Smooch Sans']
+    families: ['Bree Serif','Dosis','Smooch Sans']
   }
 });
 
@@ -66,7 +66,7 @@ let style={
   </p>
 </div>
 <div style={{width:'35%',display:'flex', justifyContent:'flex-start' }}>
-  <h2  style ={{...subHeaderStyle, fontSize:phone ? '2.2rem' : '4rem',color:'black',fontFamily:'Bree Serif',}}><span style={{fontFamily:'Bree Serif', fontWeight:100,opacity:0.2,fontSize:phone ? '2.2rem' : '4rem', }}>OUR</span>TEAM</h2>
+  <h2  style ={{...subHeaderStyle, fontSize:phone ? '2.2rem' : '4rem',color:'black',fontFamily:'Bree Serif',transform:'translateY(-5px)'}}><span style={{fontFamily:'Bree Serif', fontWeight:100,opacity:0.2,fontSize:phone ? '2.2rem' : '4rem', }}>OUR</span>TEAM</h2>
  </div>
 
   </div>

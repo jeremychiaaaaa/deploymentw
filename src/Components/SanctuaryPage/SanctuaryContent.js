@@ -29,7 +29,7 @@ export const SanctuaryContent = () => {
 
       WebFont.load({
         google: {
-          families: ['Droid Sans', 'Chilanka','Roboto Condensed','Bree Serif', 'Dosis']
+          families: ['Bree Serif', 'Dosis']
         }
       });
       window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))

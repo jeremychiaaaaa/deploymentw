@@ -8,7 +8,7 @@ const Card4 = ({onMapClose}) => {
         window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
         WebFont.load({
           google: {
-            families: ['Droid Sans', 'Chilanka','Roboto Condensed','Bree Serif','Dosis']
+            families: ['Bree Serif','Dosis']
           }
         });
        
@@ -33,8 +33,8 @@ const Card4 = ({onMapClose}) => {
       }
   return (
     <div className='routemap-content-container' style={{width:phone ? '100vw':'100%',display:'flex',justifyContent:!phone && 'center',position:phone ?'relative' : 'absolute', top:phone ? -'70px':'200px', left:phone ? 0:'50%',    transform:phone ? 'translate(0,120px)' : 'translate(-50%,0)',}}>
-    <div className='routemap-avatar' style={{width:phone ? '60vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',}} >
-<img src={place} style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone ? 'translateY(-150px)' : 'translateX(35px)'}} />
+    <div className='routemap-avatar' style={{width:phone ? '70vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',position:phone && 'absolute', left:phone &&'-110px'}} >
+<img src={place} style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone ? 'translateY(-100px)' : 'translateX(35px)'}} />
 </div>
 <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'75vh', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
  
@@ -53,12 +53,12 @@ const Card4 = ({onMapClose}) => {
      <span style={{...phone ? phoneStyle : style,display:'flex', justifyContent:'center', alignItems:'flex-start', flexDirection:'column',width:phone ? '90%':'90%'}}>
      <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4,marginLeft:phone && 2}}>KynStarter</span>
 
-<span style={{marginLeft:30}}>Have a dopeass idea that will benefit the community / web3 space? KynStarter will provide you with the necessary resources to get there.</span>
-
+<span style={{marginLeft:30}}>Have a dopeass idea that will benefit the community / web3 space?<br/> </span>
+<span style={{marginLeft:30, marginTop:10}}>KynStarter will provide you with the necessary resources to get there.</span>
   <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4,marginLeft:phone && 2}}>Music Album<br/></span>
 
-  <span style={{marginLeft:30}}>Our very own KYN Album - an album to rally us together. We will provide the initial KYN Anthem and the community will help to create the rest of the album.</span>
-
+  <span style={{marginLeft:30}}>Our very own KYN Album - an album to rally us together.<br/> </span>
+<span style={{marginLeft:30, marginTop:10}} >We will provide the initial KYN Anthem and the community will help to create the rest of the album.</span>
  <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4,marginLeft:phone && 2}}>Fully-Committed Mods
 <br/></span>
 <span style={{marginLeft:30}}>The human embodiment of the KYN brand. Mods will be the foundation for the wholesome family culture in KYN.</span>

@@ -12,7 +12,7 @@ height:100vh;
 
 .homepage-image {
 
-   background-image: url("General\ Assets/homepage-2.0.webp");
+   background-image: url("General\ Assets/homepage 2.0 STARV higher.jpg");
 
     /* Full height */
 height:100%;
@@ -405,17 +405,19 @@ scroll-snap-type: none;
 scroll-padding-top: 70px;
 }
 .manifesto-card-v2-content{
-    background-color:lightgray;
+    background-color:whitesmoke;
     display:flex;
     align-self: flex-start;
     justify-content: flex-start;
     align-content: flex-start;
     flex-direction: column;
 width:800px;
-    height:580px;
+    height:620px;
 opacity:1;
 transform: translate(-10vw,-60px);
 padding:1.5rem 0;
+padding-bottom:2rem;
+
 
 }
 .image-manifesto{
@@ -712,11 +714,28 @@ padding-bottom:calc(7% - 34px);
     min-width: auto !important;
   
 }
+
+
+
+
+.css-1abc02a,
+.css-hn784z
+{
+    background-color:white;
+}
+.css-1abc02a button {
+    height:100%;
+
+}
+
+
 .css-1abc02a:hover button{
+    background-color:transparent !important;
     opacity:1 !important;
     filter: brightness(100%) !important;
 }
 .css-hn784z:hover button {
+    background-color:transparent !important;
     opacity:1 !important;
     filter: brightness(100%) !important;
 }
@@ -915,36 +934,7 @@ border-radius: 10px;
 
 
 
- .art-card-frame {
-    background-color:#fff;
-  border:solid 1vmin rgb(193,154,107);
-  border-bottom-color:rgb(193,154,107);
-  border-left-color:rgb(193,154,107);
-  border-radius:2px;
-  border-right-color:rgb(193,154,107);
-  border-top-color:rgb(193,154,107);
-  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
-  box-sizing:border-box;
 
-
-
-  width:clamp(180px,25%,250px);
-  padding:2vmin;
-  position:relative;
-  text-align:center;
-  
- }
- 
-
- .art-card-frame img {
-    border:solid 1px;
-    border-bottom-color:#ffe;
-    border-left-color:#eed;
-    border-right-color:#eed;
-    border-top-color:#ccb;
-    max-height:100%;
-    max-width:100%;
- }
 
 .mouse-one{
     background-image: url('General\ Assets/hover_star_3.png');
@@ -1030,36 +1020,14 @@ border:none;
 }
 
 
-.art-phone-image-card {
-    background-color:#fff;
-  border:solid 1vmin rgb(193,154,107);
-  border-bottom-color:rgb(193,154,107);
-  border-left-color:rgb(193,154,107);
-  border-radius:2px;
-  border-right-color:rgb(193,154,107);
-  border-top-color:rgb(193,154,107);
-  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
-  box-sizing:border-box;
 
-
-
-  width:clamp(180px,25%,250px);
-  padding:2vmin;
-  position:relative;
-  text-align:center;
-  
- }
  
-
- .art-phone-image-card img {
-    border:solid 1px;
-    border-bottom-color:#ffe;
-    border-left-color:#eed;
-    border-right-color:#eed;
-    border-top-color:#ccb;
-    max-height:100%;
-    max-width:100%;
+ .art-card-frame {
+    width:clamp(180px,25%,250px);
+    
  }
+
+ 
 
  
 

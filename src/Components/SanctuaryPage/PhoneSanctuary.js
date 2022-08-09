@@ -20,7 +20,7 @@ import Villa8 from './Villa-1-pics/villa8.webp'
 import Villa9 from './Villa-1-pics/villa9.webp'
 import Villa10 from './Villa-1-pics/villa10.webp'
 import Villa11 from './Villa-1-pics/villa11.webp'
-import ConceptImage from './concept.jpeg'
+import ConceptImage from './metaverse-image.png'
 import fs from './f&s.jpeg'
 import SanctuaryImageCarouselOne from './SanctuaryImageCarouselOne';
 import SanctuaryImageCarouselTwo from './SanctuaryImageCarouselTwo';
@@ -60,7 +60,7 @@ const PhoneSanctuary = () => {
       })
       WebFont.load({
         google: {
-          families: ['Droid Sans', 'Chilanka','Roboto Condensed','Bree Serif', 'Dosis']
+          families: ['Bree Serif', 'Dosis']
         }
       });
       window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))

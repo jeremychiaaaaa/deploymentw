@@ -154,7 +154,7 @@ function handleTouchMove(evt) {
     <span style={{...phoneStyle,wordBreak:'break-word'}}>
     <span>10,200 unique avatars. Your KYN alter-egos. Experience The Sanctuary through them.</span>
 <br/>
-Can’t keep those sneaky werewolves from shapeshifting. If only we know when…</span>
+Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…</span>
    </div>
     </div>
     
@@ -268,18 +268,19 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we know when…
   <div style={{width:'fit-content', display:'flex', justifyContent:'center',alignItems:'center',textAlign:'right',whiteSpace:'wrap',lineHeight:'1.7rem'}}>
   <div style={{width:phone ? '90%' :'80%',display:'flex',justifyContent:'flex-end'}}>
   <p style={{...phoneStyle,textAlign:'right',lineHeight:'1.3rem',fontFamily:'Smooch Sans',fontWeight:400,fontSize:phone ? '1.2rem':'1.3rem',marginRight:phone && '5%',}}>
-  The Dream Map is a living mind map that evolves as KYN grows and develops. <br/>
-It embodies our dreams and aspirations.<br/> Together, we will build The Sanctuary from the ground up. #WGMI
+  10,200 unique avatars. Your KYN alter-egos. Experience The Sanctuary through them.<br/>
+  Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
   </p>
 </div>
-<div style={{width:phone ? '90%' :'60%',display:'flex', justifyContent:phone ? 'flex-end':'flex-start',marginRight:phone && '5%'}}>
-  <h2  style ={{...subHeaderStyle, fontSize:phone ? '2.1rem' : '4rem',color:'black',fontFamily:'Bree Serif',}}><span style={{fontFamily:'Bree Serif', fontWeight:100,opacity:0.2,fontSize:phone ? '2.1rem' : '4rem', }}>OUR</span>GALLERY</h2>
+<div style={{width:phone ? '90%' :'50%',display:'flex', justifyContent:phone ? 'flex-end':'flex-start',marginRight:phone && '5%'}}>
+  <h2  style ={{...subHeaderStyle, fontSize:phone ? '2.1rem' : '4rem',color:'black',fontFamily:'Bree Serif',transform:'translateY(-5px)'}}><span style={{fontFamily:'Bree Serif', fontWeight:100,opacity:0.2,fontSize:phone ? '2.1rem' : '4rem', }}>OUR</span>GALLERY</h2>
  </div>
  </div>
     </div>
 
           
-            <div style={{width:'100vw', display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',margin:'0 auto'}}>          <div  className='art-gallery-container'>
+            <div style={{width:'100vw', display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',margin:'0 auto'}}>          
+            <div  className='art-gallery-container'>
           <div className='art-card-row'>
             {row1.map((i,index) => 
             (

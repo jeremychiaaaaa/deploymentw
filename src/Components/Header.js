@@ -91,7 +91,7 @@ export const Header = React.forwardRef((props,ref) => {
         window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
        WebFont.load({
             google: {
-              families: ['Droid Sans', 'Chilanka','Roboto Condensed', 'Smooch Sans', 'Oswald','PT Sans Narrow','Bree Serif', "Exo", 'Patua One', 'Teko', 'Cuprum', 'Share', 'Jockey One','Dosis','Bellota Text']
+              families: ['Bree Serif', 'Dosis','Bellota Text']
             }
           });
         function scroll(e){

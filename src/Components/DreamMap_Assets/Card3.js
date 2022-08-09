@@ -8,7 +8,7 @@ const Card3 = ({onMapClose}) => {
         window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
         WebFont.load({
           google: {
-            families: ['Droid Sans', 'Chilanka','Roboto Condensed','Bree Serif','Dosis']
+            families: ['Bree Serif','Dosis']
           }
         });
        
@@ -33,8 +33,8 @@ const Card3 = ({onMapClose}) => {
       }
   return (
     <div className='routemap-content-container' style={{width:phone ? '100vw':'100%',display:'flex',justifyContent:!phone && 'center',position:phone ?'relative' : 'absolute', top:phone ? 0:'200px', left:phone ? 0:'50%',    transform:phone ? 'translate(0,190px)' : 'translate(-50%,0)',top:phone ? '-70px':200 }}>
-    <div className='routemap-avatar' style={{width:phone ? '60vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',}} >
-<img src={place} style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone ? 'translateY(-180px)' : 'translateX(30px)'}} />
+    <div className='routemap-avatar' style={{width:phone ? '70vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',position:phone && 'absolute', left:phone &&'-110px'}} >
+<img src={place} style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone ? 'translateY(-150px)' : 'translateX(30px)'}} />
 </div>
 <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'70vh', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
  
@@ -52,24 +52,26 @@ const Card3 = ({onMapClose}) => {
      <span style={{...phone ? phoneStyle : style,display:'flex', justifyContent:'center', alignItems:'flex-start', flexDirection:'column',width:phone ? '90%':'90%'}}>
    <span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>Welcome Merch</span>  
 
-   <span style={{marginLeft:30}}>  Mystery welcome box physically mailed to all verified KYNs.</span>
+   <span style={{marginLeft:30,marginTop:10}}>  Mystery welcome box physically mailed to all verified KYNs.</span>
 
-   <span style={{marginLeft:30}}>Trust us, you'll want this!</span> 
+   <span style={{marginLeft:30,marginTop:10}}>Trust us, you'll want this!</span> 
 
-    <span style={{marginLeft:30}}>Screenshot date TBA</span>
+    <span style={{marginLeft:30,marginTop:10}}>Screenshot date TBA</span>
 <br/>
 
 <span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>Physical Popups in Iconic Places</span> 
 
-<span style={{marginLeft:30}}>Pop-up shops at iconic tourist spots across the globe. <br/>
-
-To spread our KYN movement and meet fellow KYNs.</span>
+<span style={{marginLeft:30,marginTop:10}}>Pop-up shops at iconic tourist spots across the globe.</span> 
+<span style={{marginLeft:30,marginTop:10}}>To spread our KYN movement and meet fellow KYNs.
+</span>
  <br/>
 
  <span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>Limited Time Merch Shops</span>  
 
- <span style={{marginLeft:30}}> Dopeass designs, special collaborations, limited edition.<br/> Up for a few days, then gone ;)
-</span>
+ <span style={{marginLeft:30,marginTop:10}}> Dopeass designs, special collaborations, limited edition.<br/> </span>
+  <span  style={{marginLeft:30,marginTop:10}}>Up for a few days, then gone ;)</span>
+
+
 
 <br/><br/>
 

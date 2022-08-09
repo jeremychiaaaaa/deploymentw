@@ -148,7 +148,7 @@ export default function DreamMap(){
         window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
         WebFont.load({
           google: {
-            families: ['Droid Sans', 'Chilanka','Roboto Condensed','Bree Serif','Dosis','Smooch Sans']
+            families: ['Bree Serif','Dosis','Smooch Sans']
           }
         });
        
@@ -177,13 +177,13 @@ export default function DreamMap(){
           <div style={{height:'100vh',position:'absolute',overflow:'hidden',top:'80px',display:'flex', alignItems:'center',flexDirection:'column'}}>
           <div className='background-strip' style={{width:'100vw', height:phone ? 'fit-content':'110px',backgroundColor:'white', opacity:1,position:'relative',display:'flex',alignItems:phone ? 'flex-end' :'center',justifyContent:'center',gap:phone ? 15:25,flexDirection:phone ? 'column-reverse':'row',paddingBottom:phone ? 15 : 10,}}> 
 <div style={{width:phone ? '90%' :'70%',display:'flex',opacity:phone ? openCard !== 0 ? 0 : 1 : 1 ,justifyContent:'flex-end'}}>
-  <p style={{...phoneStyle,textAlign:'right',lineHeight:'1.3rem',fontFamily:'Smooch Sans',fontWeight:400,fontSize:phone ? '1.2rem':'1.3rem',marginRight:phone && '5%',}}>
+  <p style={{...phoneStyle,textAlign:'right',lineHeight:'1.3rem',fontFamily:'Smooch Sans',fontWeight:400,fontSize:phone ? '1.2rem':'1.3rem',marginRight:phone && '5%',transform:!phone &&'translateY(5px)'}}>
   The Dream Map is a living mind map that evolves as KYN grows and develops. <br/>
 It embodies our dreams and aspirations.<br/> Together, we will build The Sanctuary from the ground up. #WGMI
   </p>
 </div>
 <div style={{width:phone ? '90%' :'70%',display:'flex', justifyContent:phone ? 'flex-end':'flex-start',marginRight:phone && '5%', }}>
-  <h2  style ={{...subHeaderStyle, fontSize:phone ? '2.1rem' : '4rem',color:'black',fontFamily:'Bree Serif',}}><span style={{fontFamily:'Bree Serif', fontWeight:100,opacity:0.2,fontSize:phone ? '2.1rem' : '4rem', }}>OUR</span>DREAMMAP</h2>
+  <h2  style ={{...subHeaderStyle, fontSize:phone ? '2.1rem' : '4rem',color:'black',fontFamily:'Bree Serif',transform:phone ? openCard ? 'translateY(30px)' : '' : ''}}><span style={{fontFamily:'Bree Serif', fontWeight:100,opacity:0.2,fontSize:phone ? '2.1rem' : '4rem', }}>OUR</span>DREAMMAP</h2>
  </div>
 
   </div>

@@ -8,7 +8,7 @@ const Card8 = ({onMapClose}) => {
         window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
         WebFont.load({
           google: {
-            families: ['Droid Sans', 'Chilanka','Roboto Condensed','Bree Serif','Dosis']
+            families: ['Bree Serif','Dosis']
           }
         });
        
@@ -33,7 +33,7 @@ const Card8 = ({onMapClose}) => {
       }
   return (
     <div className='routemap-content-container' style={{width:phone ? '100vw':'100%',display:'flex',justifyContent:!phone && 'center',position:phone ?'relative' : 'absolute', top:phone ? 0:'200px', left:phone ? 0:'50%',    transform:phone ? 'translate(0,190px)' : 'translate(-50%,0)',top:phone ? '-70px':200 }}>
-    <div className='routemap-avatar' style={{width:phone ? '60vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',}} >
+    <div className='routemap-avatar' style={{width:phone ? '70vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',position:phone && 'absolute', left:phone &&'-110px'}} >
 <img src={place} style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone ? 'translateY(-150px)' : 'translateX(30px)'}} />
 </div>
 <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'70vh',overflow:'scroll', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
@@ -52,28 +52,29 @@ const Card8 = ({onMapClose}) => {
    
      <span style={{...phone ? phoneStyle : style,display:'flex', justifyContent:'center', alignItems:'flex-start', flexDirection:'column',width:phone ? '90%':'90%',marginLeft:30}}>
     
-Our very own KYN pet, where we will adopt an animal, and fractionalise pictures of it.<br/><br/>
+Our very own KYN pet, where we will adopt an animal, and<br/> fractionalise pictures of it.<br/>
 
-This pet will be living in one of our Sanctuaries, where you can visit and play with it.<br/><br/>
+<span style={{marginTop:10}}>This pet will be living in one of our Sanctuaries, where you can visit and play with it.</span>
 
-Fraction-holders can vote on its major life decisions to give it its best possible life + maybe even create IP out of this! 
-<br/><br/>
+<span style={{marginTop:10}}>Fraction-holders can vote on its major life decisions to give it its best possible life.</span>
+<br/>
 For example, <br/>
-    <span >
-      1. The design of its playhouse <br/>
-      2. Choice of mate (if any)  <br/>
-      3. Gourmet pet treats <br/>
-      4. Luxury grooming services <br/>
-      5. Recerational spots to bring it to:<br/>
+    <span style={{marginLeft:20,marginTop:10}}>
+      1. The design of its playhouse <br/> </span>
+   <span style={{marginLeft:20,marginTop:10}}> 2. Choice of mate (if any)</span>    
+     <span style={{marginLeft:20,marginTop:10}}> 3. Choice of caretaker</span> 
+    <span style={{marginLeft:20,marginTop:10}}> 4. Gourmet pet treats</span>
+    <span style={{marginLeft:20,marginTop:10}}>5. Luxury grooming services</span>  
+      
+     <span style={{marginLeft:20,marginTop:10}}>6. Recerational spots to bring it to:</span> <br/>
       <span style={{display:'flex', flexDirection:'row',gap:5,marginLeft:20 }}>●<span>Maybe even travel the world to visit our different Sanctuaries,or</span></span>
-      <span style={{display:'flex', flexDirection:'row',gap:5,marginLeft:20}}>●<span>Attend our in-person events</span></span><br/>
-      6. The choice of caretaker<br/><br/>
+      <span style={{display:'flex', flexDirection:'row',gap:5,marginLeft:20,marginTop:10}}>●<span>Attend our in-person events</span></span>
 
-      IP could even be created out of this! <br/><br/>
+     <span  style={{marginLeft:20,marginTop:10}}>IP could even be created out of this!</span> 
 
-      The possibilities are endless and it is all up to the community's votes.
+     <span style={{marginLeft:20,marginTop:10}}>The possibilities are endless and it is all up to the community's votes.</span> 
 
-    </span>
+   
      </span>
 
 

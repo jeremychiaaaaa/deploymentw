@@ -8,7 +8,7 @@ const Card2 = ({onMapClose}) => {
         window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
         WebFont.load({
           google: {
-            families: ['Droid Sans', 'Chilanka','Roboto Condensed','Bree Serif','Dosis']
+            families: ['Bree Serif','Dosis']
           }
         });
        
@@ -33,8 +33,8 @@ const Card2 = ({onMapClose}) => {
       }
   return (
     <div className='routemap-content-container' style={{width:phone ? '100vw':'100%',display:'flex',justifyContent:!phone && 'center',position:phone ?'relative' : 'absolute',  left:phone ? 0:'50%',    transform:phone ? 'translate(0,190px)' : 'translate(-50%,0)',top:phone ? '-70px':200 }}>
-    <div className='routemap-avatar' style={{width:phone ? '60vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',}} >
-<img src={place} style={{width:phone ? '100%':'350px',height:phone ? '100%':'70vh',zIndex:10, objectFit:'cover',transform:phone && 'translateY(-182px)'}} />
+    <div className='routemap-avatar' style={{width:phone ? '70vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',position:phone && 'absolute', left:phone &&'-110px'}} >
+<img src={place} style={{width:phone ? '100%':'350px',height:phone ? '100%':'70vh',zIndex:10, objectFit:'cover',transform:phone && 'translateY(-152px)'}} />
 </div>
 <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'75vh',overflow:'scroll', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
  
@@ -54,29 +54,29 @@ const Card2 = ({onMapClose}) => {
    <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}> Real Life Sanctuaries</span> 
 
   
-    <span style={{marginLeft:30}}> KYN's own private properties ranging from villas to castles.</span>
+    <span style={{marginLeft:30,marginTop:10}}> KYN's own private properties ranging from villas to castles.</span>
    
  
-     <span style={{marginLeft:30}}>A safe space we can truly call home.</span> 
+     <span style={{marginLeft:30,marginTop:10}}>A safe space we can truly call home.</span> 
     
  
-   <span style={{marginLeft:30}}> These will be our HQs and hangout spots.</span>
+   <span style={{marginLeft:30,marginTop:10}}> These will be our HQs and hangout spots.</span>
      
  
  
-   <span style={{marginLeft:30}}>    Our ultimate long-term goal is to have multiple sanctuaries across the globe for all KYNs.</span>
+   <span style={{marginLeft:30,marginTop:10}}>    Our ultimate long-term goal is to have multiple sanctuaries<br/> across the globe for all KYNs.</span>
      
  
    <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}> IRL Land Sale</span> 
 
 
-<span style={{marginLeft:30}}> Rather than a virtual land sale, why not have a real life one?</span>
+<span style={{marginLeft:30,marginTop:10}}> Rather than a virtual land sale, why not have a real life one?</span>
 
 
- <span style={{marginLeft:30}}>Land that is part of our (future) castle's estate will be fractionalised into NFT fractions.</span> 
+ <span style={{marginLeft:30,marginTop:10}}>Land that is part of our (future) castle's estate will be<br/> fractionalised  into NFT fractions.</span> 
 
 
-<span style={{marginLeft:30}}> Holders of these fractions could vote on how they want to develop that piece of land.</span>
+<span style={{marginLeft:30,marginTop:10}}> Holders of these fractions could vote on how they want to<br/> develop that piece of land.</span>
 
  
      </span>

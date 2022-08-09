@@ -8,7 +8,7 @@ const Card5 = ({onMapClose}) => {
         window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
         WebFont.load({
           google: {
-            families: ['Droid Sans', 'Chilanka','Roboto Condensed','Bree Serif','Dosis']
+            families: ['Bree Serif','Dosis']
           }
         });
        
@@ -33,7 +33,7 @@ const Card5 = ({onMapClose}) => {
       }
   return (
     <div className='routemap-content-container' style={{width:phone ? '100vw':'100%',display:'flex',justifyContent:!phone && 'center',position:phone ?'relative' : 'absolute', top:phone ? 0:'200px', left:phone ? 0:'50%',    transform:phone ? 'translate(0,190px)' : 'translate(-50%,0)',top:phone ? '-70px':200 }}>
-    <div className='routemap-avatar' style={{width:phone ? '60vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',}} >
+    <div className='routemap-avatar' style={{width:phone ? '70vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',position:phone && 'absolute', left:phone &&'-110px'}} >
 <img src={place} style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone ? 'translateY(-150px)' : 'translateX(30px)'}} />
 </div>
 <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'70vh', backgroundColor:'white',opacity:0.8,overflow:'scroll',transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
@@ -53,17 +53,18 @@ const Card5 = ({onMapClose}) => {
    <span style={{...phone ? phoneStyle : style,display:'flex', justifyContent:'center', alignItems:'flex-start', flexDirection:'column',width:phone ? '90%':'90%'}}>
    <span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>Seminars</span> 
 
-  <span style={{marginLeft:30}}> For the learners among us who strive to become the best version of themselves. 
-<br/>
+  <span style={{marginLeft:30}}> For the learners among us who strive to become<br/> the best version of themselves. </span> 
 
-We will only hold these if we can get big names on board that will value-add to our community.</span> 
+<span  style={{marginLeft:30,marginTop:10}} >We will only hold these if we can get big names on board<br/> that will value-add to our community.</span>
+
 
 
 
 
 <span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>Business Adventure Camp</span> 
 
-<span style={{marginLeft:30}}>In-person, team-bonding type camp where famous speakers will be invited. Network and learn from the best!</span>
+<span style={{marginLeft:30}}>In-person, team-bonding type camp where famous speakers will be invited.</span>
+<span style={{marginLeft:30,marginTop:10}}> Network and learn from the best!</span>
  <br/>
 <br/>
  
