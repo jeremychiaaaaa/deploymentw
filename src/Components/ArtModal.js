@@ -2,8 +2,8 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import Backdrop from './Backdrop'
 import ReactCompareImage from 'react-compare-image';
-const newArt1 = require('./KYN Designed Avatar Collection D werewolf form.jpg')
-const newArt2 = require('./KYN Designed Avatar Collection D werewolf no hand.jpg')
+const newArt1 = require('./KYN Designed Avatar Collection D werewolf form (2).jpg')
+const newArt2 = require('./KYN Designed Avatar Collection D werewolf no hand (1).jpg')
 const dropIn = {
     hidden:{
         y:'-20vh',
