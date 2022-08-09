@@ -241,7 +241,7 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
           </Drawer>
         </div>
         <div style={{position:'absolute',bottom:-180,width:'100vw',left:-110}}>
-        <img src={phoneAvatar} style={{width:'100%', height:'auto', objectFit:'cover',transform:'scale(1.4)'}} alt='avatar' />
+        <img src={phoneAvatar} style={{width:'100%', height:'auto', objectFit:'cover',transform:'scale(1.4) translateY(60px)'}} alt='avatar' />
         </div>
     </div>
    
