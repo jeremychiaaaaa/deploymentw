@@ -723,7 +723,14 @@ padding-bottom:calc(7% - 34px);
 {
     background-color:white;
 }
-.css-1abc02a button {
+.css-1ujsas3{
+    min-width: auto !important;
+    padding:none !important;
+}
+.css-1abc02a button,
+.css-hn784z button
+
+{
     height:100%;
 
 }
@@ -926,16 +933,6 @@ border-radius: 10px;
    
 }
 
-/*end of dreammap page */
-
-
-
-/*start of art page */
-
-
-
-
-
 .mouse-one{
     background-image: url('General\ Assets/hover_star_3.png');
     width:100%;
@@ -1012,6 +1009,18 @@ border:none;
 }
 
 
+
+/*end of dreammap page */
+
+
+
+/*start of art page */
+
+
+
+
+
+
 .phone-art-button {
     cursor:pointer;
     position:absolute;
@@ -1024,13 +1033,15 @@ border:none;
  
  .art-card-frame {
     width:clamp(180px,25%,250px);
-    
+    box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
  }
 
  
 
  
-
+.art-phone-image-card{
+    box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+}
 
 .art-phone-drawer{
         height:80vh;
