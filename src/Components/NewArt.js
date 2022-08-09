@@ -173,7 +173,7 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
         
     {row1.filter((i,index) => index < 2).map((i,index) => (
         <div className='art-phone-image-card'>
-            <img src={i.img}/>
+            <img src={i.img} alt='avatar'/>
             </div>
     ))}
     </div>
@@ -181,7 +181,7 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
     <div  style={{display:'flex',alignItems:'center',flexDirection:'row',gap:'15px',justifyContent:'center',marginTop:15}}>
     {row1.filter((i,index) => index >= 2).map((i,index) => (
         <div className='art-phone-image-card'>
-            <img src={i.img} />
+            <img src={i.img} alt='avatar' />
             </div>
     ))}
 
@@ -192,7 +192,7 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
         
     {row2.filter((i,index) => index < 2).map((i,index) => (
         <div className='art-phone-image-card'>
-            <img src={i.img}/>
+            <img src={i.img} alt='avatar'/>
             </div>
     ))}
     </div>
@@ -200,7 +200,7 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
     <div  style={{display:'flex',alignItems:'center',flexDirection:'row',gap:'15px',justifyContent:'center',marginTop:15}}>
     {row2.filter((i,index) => index >= 2).map((i,index) => (
         <div className='art-phone-image-card'>
-            <img src={i.img} />
+            <img src={i.img} alt='avatar'/>
             </div>
     ))}
 
@@ -211,7 +211,7 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
         
     {row3.filter((i,index) => index < 2).map((i,index) => (
         <div className='art-phone-image-card'>
-            <img src={i.img}/>
+            <img src={i.img} alt='avatar'/>
             </div>
     ))}
     </div>
@@ -219,7 +219,7 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
     <div  style={{display:'flex',alignItems:'center',flexDirection:'row',gap:'15px',justifyContent:'center',marginTop:15}}>
     {row3.filter((i,index) => index >= 2).map((i,index) => (
         <div className='art-phone-image-card'>
-            <img src={i.img} />
+            <img src={i.img} alt='avatar' />
             </div>
     ))}
 
@@ -241,7 +241,7 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
           </Drawer>
         </div>
         <div style={{position:'absolute',bottom:-180,width:'100vw',left:-110}}>
-        <img src={phoneAvatar} style={{width:'100%', height:'auto', objectFit:'cover',transform:'scale(1.4)'}} />
+        <img src={phoneAvatar} style={{width:'100%', height:'auto', objectFit:'cover',transform:'scale(1.4)'}} alt='avatar' />
         </div>
     </div>
    
@@ -287,7 +287,7 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
                 <div   className='art-card-frame'
                 >
                       
-                             <img src={i.img}   />
+                             <img src={i.img} alt='avatar'  />
                       
                      
                      
@@ -303,7 +303,7 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
                 <div  className='art-card-frame'
                 >
                       
-                             <img src={i.img}  />
+                             <img src={i.img} alt='avatar' />
                       
                      
                      
@@ -318,7 +318,7 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
                 <div  className='art-card-frame'
                 >
                       
-                             <img src={i.img}  />
+                             <img src={i.img} alt='avatar' />
                       
                      
                      

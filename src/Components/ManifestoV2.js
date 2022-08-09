@@ -120,7 +120,7 @@ export const  ManifestoV2 = React.forwardRef((props,ref) => {
     </div>
     <div style={{display:'flex', width:'100vw',}}>
             <div className='image-phone-manifesto' >
-                <img src={place } />
+                <img src={place } alt='avatar' />
                 </div>
       <div style={{display:'flex',flexDirection:'column',backgroundColor:'lightgray'}}>
       <div className='manifesto-card-v2-phone-content'>
@@ -182,7 +182,7 @@ To become the best versions of ourselves
  
         <div style={{display:'flex', width:'100vw',justifyContent:'center',alignItems:'center'}}>
             <div className='image-manifesto' >
-                <img src={place } />
+                <img src={place } alt='avatar' />
                 </div>
       <div style={{display:'flex'}}>
       <div className='manifesto-card-v2-content'>

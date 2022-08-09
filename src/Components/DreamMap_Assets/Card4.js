@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import WebFont from 'webfontloader';
-import {motion,AnimatePresence} from 'framer-motion'
+import {motion,} from 'framer-motion'
 const place = require('./Avatars/web art dreammap bri community.png')
 const Card4 = ({onMapClose}) => {
     const[phone,setPhone] = useState(window.matchMedia("(max-width: 1060px)").matches)
@@ -22,19 +22,14 @@ const Card4 = ({onMapClose}) => {
       let phoneSubHead = {
         fontWeight:900, fontSize:'1.6rem',fontFamily:'Bree Serif',position:'relative',color:'black',marginTop:'30px'
       }
-      let phoneSubHeaderStyle = {
-        fontFamily:'Bree Serif', fontSize:'2.2rem', fontWeight:700, color:'white',marginLeft:'25px', marginBottom:'20px'
-      }
-      let subHeaderStyle = {
-        fontFamily:'Dosis', fontSize:'4.4rem', fontWeight:600, color:'white',marginLeft:'10px', alignSelf:'center'
-      }
+     
       let subHead = {
         fontWeight:900, fontSize:'1.6rem',fontFamily:'Bree Serif',position:'relative', marginTop:'20px', marginLeft:'0px', letterSpacing:3.4, 
       }
   return (
     <div className='routemap-content-container' style={{width:phone ? '100vw':'100%',display:'flex',justifyContent:!phone && 'center',position:phone ?'relative' : 'absolute', top:phone ? -'70px':'200px', left:phone ? 0:'50%',    transform:phone ? 'translate(0,120px)' : 'translate(-50%,0)',}}>
     <div className='routemap-avatar' style={{width:phone ? '70vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',position:phone && 'absolute', left:phone &&'-110px'}} >
-<img src={place} style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone ? 'translateY(-100px)' : 'translateX(35px)'}} />
+<img src={place} alt='avatar' style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone ? 'translateY(-100px)' : 'translateX(35px)'}} />
 </div>
 <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'75vh', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
  

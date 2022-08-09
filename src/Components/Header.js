@@ -1,14 +1,7 @@
-import React, {useState, useRef, useContext,useEffect, forwardRef} from 'react'
-import Sanctuary from './SanctuaryPage/Sanctuary.js'
-
-
-import Team from './Team.js'
-
-import NewArt from './NewArt.js'
-import HomePage from './HomePage.js'
+import React, {useState, useRef, useContext,useEffect, } from 'react'
 
 import '../App.css'
-import { AudioContext } from '../App.js'
+
 import { HeaderContext } from '../App.js'
 import WebFont from 'webfontloader';
 import {BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom'
@@ -17,24 +10,11 @@ const faceOff = require('./Epic_Dramatic_Full_No_Vocals-AudioTrimmer.com.mp3')
 
 export const Header = React.forwardRef((props,ref) => {
  const audio = useRef(new Audio(faceOff))
- let style={
-    fontWeight:200, fontSize:'1.3rem',fontFamily:'Dosis',marginLeft:'10px'
-  }
-  let phoneStyle={
-    fontWeight:200, fontSize:'1.1rem',fontFamily:'Dosis',marginLeft:'10px'
-  }
+
   let phoneSubHead = {
     fontWeight:900, fontSize:'2rem',fontFamily:'Bree Serif',position:'relative', marginLeft:'10px'
   }
-  let phoneSubHeaderStyle = {
-    fontFamily:'Bree Serif', fontSize:'2.2rem', fontWeight:700, color:'white',marginLeft:'25px', marginBottom:'20px'
-  }
-  let subHeaderStyle = {
-    fontFamily:'Bree Serif', fontSize:'4.6rem', fontWeight:700, color:'white',marginLeft:'29px'
-  }
-  let subHead = {
-    fontWeight:900, fontSize:'1.6rem',fontFamily:'Bree Serif',
-  }
+
   let borderStyle = {
    borderBottomWidth: '1px', width:'100%', marginLeft:'20px',borderBottomColor:'beige', paddingBottom:'10px'
   }

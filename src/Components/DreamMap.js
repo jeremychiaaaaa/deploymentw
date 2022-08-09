@@ -1,4 +1,4 @@
-import React, {useState, useRef, useContext,useEffect, forwardRef} from 'react'
+import React, {useState,useEffect} from 'react'
 
 import Card1 from './DreamMap_Assets/Card1.js'
 import Card2 from './DreamMap_Assets/Card2.js'
@@ -9,12 +9,11 @@ import Card6 from './DreamMap_Assets/Card6.js'
 import Card7 from './DreamMap_Assets/Card7.js'
 import Card8 from './DreamMap_Assets/Card8.js'
 
-import { AudioContext } from '../App.js'
-import { HeaderContext } from '../App.js'
+
 import { ImageMap } from '@qiuz/react-image-map';
 import WebFont from 'webfontloader';
-import {motion,AnimatePresence} from 'framer-motion'
-import {BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom';
+
+
 
 const phonebackground = require('./dreammap-mobile-bg.jpeg')
 const trial = require('./dreammap_final.jpeg')
@@ -153,24 +152,15 @@ export default function DreamMap(){
         });
        
        }, )
-       let style={
-        fontWeight:200, fontSize:'1.2rem',fontFamily:'Dosis',color:'black'
-      }
+       
       let phoneStyle={
         fontWeight:200, fontSize:'1.1rem',fontFamily:'Dosis',
       }
-      let phoneSubHead = {
-        fontWeight:900, fontSize:'1.6rem',fontFamily:'Bree Serif',position:'relative',color:'black',marginTop:'30px'
-      }
-      let phoneSubHeaderStyle = {
-        fontFamily:'Bree Serif', fontSize:'2.2rem', fontWeight:700, color:'white',marginLeft:'25px', marginBottom:'20px'
-      }
+      
       let subHeaderStyle = {
         fontFamily:'Dosis', fontSize:'4.4rem', fontWeight:600, color:'white',marginLeft:'10px', alignSelf:'center'
       }
-      let subHead = {
-        fontWeight:900, fontSize:'1.6rem',fontFamily:'Bree Serif',position:'relative', marginTop:'20px', marginLeft:'0px', letterSpacing:3.4, 
-      }
+      
     return(
         <>
         

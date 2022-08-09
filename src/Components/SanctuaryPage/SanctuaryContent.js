@@ -10,15 +10,7 @@ export const SanctuaryContent = () => {
     let stylee={
         fontWeight:200, fontSize:'1.3rem',fontFamily:'Dosis',marginBottom:'15px'
       }
-      let phoneStyle={
-        fontWeight:200, fontSize:'1.1rem',fontFamily:'Dosis',marginLeft:'10px'
-      }
-      let phoneSubHead = {
-        fontWeight:900, fontSize:'1.3rem',fontFamily:'Bree Serif',position:'relative', marginTop:'20px', marginLeft:'10px', letterSpacing:4.4, 
-      }
-      let phoneSubHeaderStyle = {
-        fontFamily:'Bree Serif', fontSize:'2.2rem', fontWeight:700, color:'white',marginLeft:'25px', marginBottom:'20px'
-      }
+     
       let subHeaderStyle = {
         fontFamily:'Bree Serif', fontSize:'4.6rem', fontWeight:700, color:'white',}
       let subHead = {

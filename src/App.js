@@ -1,7 +1,7 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useRef} from 'react'
 import './App.css';
 import {Helmet} from "react-helmet";
-import { BrowserRouter as Router, Routes,Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Routes,Route,  } from 'react-router-dom';
 import {Header} from './Components/Header'
 import HomePage from './Components/HomePage';
 
@@ -11,9 +11,6 @@ import NewArt from './Components/NewArt';
 import Team from './Components/Team';
 import Sanctuary from './Components/SanctuaryPage/Sanctuary';
 
-import TypewriterComponent from 'typewriter-effect';
-
-import WebFont from 'webfontloader';
 
 import ManifestoV2 from './Components/ManifestoV2';
 import DreamMap from './Components/DreamMap';
@@ -21,7 +18,7 @@ const faceOff = require('./Components/Epic_Dramatic_Full_No_Vocals-AudioTrimmer.
 
 export const HeaderContext = React.createContext()
 function App() {
-   const[loading,setLoading] = useState(true)
+
 const audio = useRef(new Audio(faceOff))
   const [phoneClicked, setPhoneClicked] = useState(false)
   const[musicPlay,setMusicPlay] = useState(false)

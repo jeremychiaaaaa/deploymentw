@@ -67,17 +67,17 @@ const SanctuaryImageCarouselOne = () => {
       }
     }}
     >
-     <img src={Villa1} />
-     <img src={Villa2} />
-     <img src={Villa3} />
-     <img src={Villa4} />
-     <img src={Villa5} />
-     <img src={Villa6} />
-     <img src={Villa7} />
-     <img src={Villa8} />
-     <img src={Villa9} />
-     <img src={Villa10} />
-     <img src={Villa11} />
+     <img src={Villa1} alt='villa'/>
+     <img src={Villa2} alt='villa' />
+     <img src={Villa3} alt='villa' />
+     <img src={Villa4} alt='villa' />
+     <img src={Villa5} alt='villa' />
+     <img src={Villa6} alt='villa' />
+     <img src={Villa7} alt='villa' />
+     <img src={Villa8} alt='villa' />
+     <img src={Villa9} alt='villa' />
+     <img src={Villa10} alt='villa' />
+     <img src={Villa11} alt='villa' />
      
      
     </Carousel>

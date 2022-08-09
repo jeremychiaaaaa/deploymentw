@@ -9,6 +9,13 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination } from "swiper";
+
+import FounderImage from './TeamImages/founders-image.png'
+import FounderImage1 from './TeamImages/founders-image-2.png'
+import ArtistImage from './TeamImages/artist-image.png'
+import CoderImage from './TeamImages/coder-image.jpeg'
+import Mod1 from './TeamImages/bot-image.png'
+import Mod2 from './TeamImages/bot-image-2.png'
 function Team() {
   const[phone,setPhone] = useState(window.matchMedia("(max-width: 1060px)").matches)
   const context = useContext(HeaderContext)
@@ -91,7 +98,7 @@ let style={
      
     <SwiperSlide>
       <div className={phone ? 'profileCard-Phone': 'profileCard' }>
-      <img src='https://media.discordapp.net/attachments/948453786471510050/982212989329502298/unknown.png?width=651&height=651' className='profilePicture' />
+      <img src={FounderImage} className='profilePicture' alt='Founder 1 image' />
      <h1 style={subHeaderStyle}>Divine Prophet</h1>
      <h3 style={subHead}>FOUNDER</h3>
     
@@ -111,7 +118,7 @@ let style={
     </SwiperSlide>
     <SwiperSlide>
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
-      <img src='https://media.discordapp.net/attachments/948453786471510050/982212991367913512/unknown.png?width=651&height=651' className='profilePicture' />
+      <img src={FounderImage1} className='profilePicture' alt='Founder 2 image' />
       <h1 style={subHeaderStyle}>Holyxaffinity</h1>
      <h3 style={subHead}>FOUNDER</h3>
     
@@ -132,7 +139,7 @@ let style={
     </SwiperSlide>
     <SwiperSlide>
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
-      <img src='https://media.discordapp.net/attachments/948453786471510050/982212990277386330/unknown.png?width=651&height=651' className='profilePicture' />
+      <img src={ArtistImage} className='profilePicture' alt='Artist image'/>
       <h1 style={subHeaderStyle}>Auxuris</h1>
      <h3 style={subHead}>LEAD ARTIST</h3>
     
@@ -152,7 +159,7 @@ let style={
     </SwiperSlide>
     <SwiperSlide>
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
-      <img src='https://media.discordapp.net/attachments/948453786471510050/982212991959326720/KYN_Designed_Avatar_Collection_2.jpg?width=651&height=651' className='profilePicture' />
+      <img src={CoderImage} className='profilePicture' alt='Coder image'/>
       <h1 style={subHeaderStyle}>Jem</h1>
      <h3 style={subHead}>TECH LEAD</h3>
     
@@ -163,7 +170,7 @@ let style={
       <div className='profileCard-icons'>
       
         <div className='teamcard-svg'>
-       <a href='https://www.twitter.com/auxuris'><span className='team-icon-twitter '></span></a>   
+       <a href='/'><span className='team-icon-twitter '></span></a>   
 
         </div>
          <span style={{...style, marginTop:0}}> @jem </span>
@@ -172,7 +179,7 @@ let style={
     </SwiperSlide>
     <SwiperSlide>
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
-      <img src='https://media.discordapp.net/attachments/948453786471510050/982215679296045116/unknown.png?width=651&height=651' className='profilePicture' />
+      <img src={Mod1} className='profilePicture' alt='Mod 1 image' />
       <h1 style={subHeaderStyle}>Tom</h1>
      <h3 style={subHead}>HEAD MOD</h3>
   
@@ -184,7 +191,7 @@ let style={
       <div className='profileCard-icons'>
       
         <div className='teamcard-svg'>
-       <a href='https://www.twitter.com/auxuris'><span className='team-icon-twitter '></span></a>   
+       <a href='/'><span className='team-icon-twitter '></span></a>   
 
         </div>
          <span style={{...style, marginTop:0}}> @headmod </span>
@@ -193,7 +200,7 @@ let style={
     </SwiperSlide>
     <SwiperSlide>
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
-      <img src='https://media.discordapp.net/attachments/948453786471510050/982215788150788126/unknown.png?width=651&height=651' className='profilePicture' />
+      <img src={Mod2} className='profilePicture' alt='Mod 2 image'/>
       <h1 style={subHeaderStyle}>Jerry</h1>
      <h3 style={subHead}>HEAD MOD</h3>
   
@@ -206,7 +213,7 @@ let style={
       <div className='profileCard-icons'>
       
         <div className='teamcard-svg'>
-       <a href='https://www.twitter.com/auxuris'><span className='team-icon-twitter '></span></a>   
+       <a href='/'><span className='team-icon-twitter '></span></a>   
 
         </div>
          <span style={{...style, marginTop:0}}> @headmod </span>

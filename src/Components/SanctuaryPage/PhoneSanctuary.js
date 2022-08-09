@@ -88,7 +88,7 @@ const PhoneSanctuary = () => {
    <SwiperSlide className='phone-sanctuary-card' >
   
         <div className='sanctuary-phone-image' >
-           <img src={ConceptImage} style={{objectPosition:'80% 50%'}} />
+           <img src={ConceptImage} style={{objectPosition:'80% 50%'}} alt='Concept ' />
         </div>
 
         <h2 style={{...subHead, marginTop:'60px'}}>THE CONCEPT</h2>
@@ -104,7 +104,7 @@ spending most of our time.</p>
    <SwiperSlide className='phone-sanctuary-card' >
   
   <div className='sanctuary-phone-image' >
-     <img src={fs}  />
+     <img src={fs} alt='feasibility and sustainability'  />
   </div>
 
   <h2 style={{...subHead, marginTop:'60px',fontSize:'1.5rem',}}>FEASIBILITY AND SUSTAINABILITY</h2>
