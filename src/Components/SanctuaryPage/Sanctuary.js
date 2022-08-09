@@ -2,12 +2,11 @@ import React,{useEffect,useState,useContext} from 'react'
 
 import styled, { keyframes } from 'styled-components'
 import { createGlobalStyle } from 'styled-components'
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
+
 import WebFont from 'webfontloader';
 import { SanctuaryContent } from './SanctuaryContent';
 import PhoneSanctuary from './PhoneSanctuary';
-const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-const FadeUp = batch(Fade(), MoveOut(0, -200), Sticky());
+
 const cloud1 = require('./Clouds/cloud1.png')
 
 const cloud2 = require('./Clouds/cloud2.png')

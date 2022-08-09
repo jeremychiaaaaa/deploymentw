@@ -12,7 +12,7 @@ height:100vh;
 
 .homepage-image {
 
-   background-image: url("General\ Assets/homepage 2.0 STARV higher.jpg");
+   background-image: url("General\ Assets/homepage 2.0 STARV higher (1).jpg");
 
     /* Full height */
 height:100%;
@@ -309,10 +309,10 @@ height:100vh;
             
         }
         .sanctuary .clouds img{
-            position:absolute;
-            bottom:-0px !important;
+            
+            bottom:20px !important;
             max-width:100%;
-        
+      
         }
 .founder-phone{
     display: flex;
@@ -397,7 +397,7 @@ min-height:100%;
 overflow-x: hidden!important;
  overflow: -moz-hidden-unscrollable;
 
-background-image: url('General\ Assets/KYN web MANIFESTO bg pinkpurple.jpg');
+background-image: url('General\ Assets/KYN web MANIFESTO bg pinkpurple (1).jpg');
 background-position: center;
 background-size: cover;
 scroll-behavior: smooth;
@@ -550,7 +550,7 @@ position: relative;
     display: flex;
     justify-content: center;
  position:relative;
-    background-image: url(sanctuary_header_1.jpeg);
+    background-image: url('General\ Assets/sanctuary_header_1.jpg');
 
     align-items: center;
 overflow-y:hidden;
@@ -583,7 +583,7 @@ overflow-y:hidden;
 .values{
 
 
-    background-image:url('General\ Assets/KYN\ web\ SANC\ bg\ bright.jpg');
+    background-image:url('General\ Assets/KYN web MANIFESTO bg pinkpurple (1).jpg');
     width:100%;
     display: flex;
     justify-content: center;
@@ -725,7 +725,7 @@ padding-bottom:calc(7% - 34px);
 }
 .css-1ujsas3{
     min-width: auto !important;
-    padding:none !important;
+    padding:0 !important;
 }
 .css-1abc02a button,
 .css-hn784z button
@@ -772,7 +772,7 @@ section {
     height:100%;
 
     
-    background-image: url('General\ Assets/KYN\ web\ TEAM\ bg\ bright.jpg');
+    background-image: url('General\ Assets/KYN web MANIFESTO bg pinkpurple (1).jpg');
 
     position:absolute;
     display: flex;
