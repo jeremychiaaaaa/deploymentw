@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import WebFont from 'webfontloader';
 import {motion} from 'framer-motion'
-const place = require('./Avatars/web art dreammap bri phy merch.png')
+const place = require('./Avatars/web art dreammap bri phy merch.webp')
 const Card3 = ({onMapClose}) => {
     const[phone,setPhone] = useState(window.matchMedia("(max-width: 1060px)").matches)
     useEffect(() => {
