@@ -34,7 +34,7 @@ const Card3 = ({onMapClose,img}) => {
 <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'75vh', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
  
   <motion.button
-  style={{backgroundColor:'black',width:'100%',fontFamily:'Bree Serif', fontSize:'1.2rem', color:'white'}}
+  style={{backgroundColor:'black',width:'100%',fontFamily:'Bree Serif', fontSize:'1.2rem', color:'white',height:50}}
   onClick={onMapClose}
   whileHover={{backgroundColor:'rgba(220,220,220,0.5)',opacity:1, color:'black'}}
   >

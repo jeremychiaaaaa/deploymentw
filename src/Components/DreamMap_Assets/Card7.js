@@ -31,7 +31,7 @@ const Card7 = ({onMapClose,img}) => {
     <div className='routemap-avatar' style={{width:phone ? '300px' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',position:phone && 'absolute', left:phone &&'-110px'}} >
 <img src={img} alt='avatar' style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone ? 'translateY(-130px)' : 'translateX(30px)'}} />
 </div>
-<div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'75vh',overflow:'scroll', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
+<div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'75vh',overflow:!phone && 'scroll', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
  
   <motion.button
   style={{backgroundColor:'black',width:'100%',fontFamily:'Bree Serif', fontSize:'1.2rem', color:'white',position:'sticky'}}
