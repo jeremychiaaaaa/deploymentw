@@ -50,7 +50,7 @@ const[sanctuaryMusicStart,setSanctuaryMusicStart] = useState(false)
         <Route path='/sanctuary' element={<Sanctuary />}></Route>
         <Route path='/manifesto' element={<ManifestoV2 ref={audio} />}></Route>
         
-        <Route path='/dreamMap' element={<DreamMap />}></Route>
+        <Route path='/dreammap' element={<DreamMap />}></Route>
         <Route path='/team' element={<Team />}></Route>
         <Route path='/art' element={<NewArt />} ></Route>
 

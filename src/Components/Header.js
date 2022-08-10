@@ -151,7 +151,7 @@ export const Header = React.forwardRef((props,ref) => {
               textDecoration:"underline"} : {color: 'black',fontSize:'0.9rem',letterSpacing:'0.1rem'}
            }  onClick={sanctuaryClick}><span className={!phone && "tabs"}>SANCTUARY</span></NavLink></div>
                <div  style={phone ? borderStyle :a }>
-           <NavLink to='/dreamMap' style={ phone ? phoneSubHead : ({isActive}) => isActive ? {
+           <NavLink to='/dreammap' style={ phone ? phoneSubHead : ({isActive}) => isActive ? {
               textDecoration:"underline"} : {color: 'black',fontSize:'0.9rem',letterSpacing:'0.1rem' }
            } onClick={handleClick}><span className={!phone && "tabs"} >DREAM MAP</span></NavLink></div>
             <div  style={phone ? borderStyle :a }>
