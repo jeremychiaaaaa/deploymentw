@@ -77,6 +77,7 @@ export const Header = React.forwardRef((props,ref) => {
     const dreamMapClick = () => {
       if(phone){
         context.setPhoneClicked(!context.phoneClicked)
+        setClick(!click)
       }
       context.setLoadAvatars(true)
       context.setStickyHeader(false)
@@ -87,7 +88,7 @@ export const Header = React.forwardRef((props,ref) => {
       sanctuaryAudio.current.pause()
       sanctuaryAudio.current.currentTime = 0
         
-      console.log('hi')
+     
     }
 
 

@@ -15,7 +15,15 @@ import image2 from './DreamMap_Assets/Avatars/web art dreammap bri irl sanctuari
 
 import image3 from './DreamMap_Assets/Avatars/web art dreammap bri phy merch.webp'
 
+import image4 from './DreamMap_Assets/Avatars/web art dreammap bri community.webp'
 
+import image5 from './DreamMap_Assets/Avatars/web art dreammap bri education.webp'
+
+import image6 from './DreamMap_Assets/Avatars/web art dreammap bri tbe.webp'
+
+import image7 from './DreamMap_Assets/Avatars/web art dreammap bri connecting people.webp'
+
+import image8 from './DreamMap_Assets/Avatars/web art dreammap bri animal.webp'
 
 import { ImageMap } from '@qiuz/react-image-map';
 import WebFont from 'webfontloader';
@@ -163,7 +171,7 @@ export default function DreamMap(){
           }
         });
        if(context.loadAvatars === true){
-          let imageList = [image1,image2,image3,]
+          let imageList = [image1,image2,image3,image4,image5,image6,image7,image8]
           imageList.forEach((image) => {
             new Image().src = image
           })
@@ -209,11 +217,11 @@ It embodies our dreams and aspirations.<br/> Together, we will build The Sanctua
           <Card2 onMapClose={onMapClose} img={image2} />
         )}
         {openCard === 3 && <Card3 onMapClose={onMapClose} img={image3} />}
-        {openCard === 4 && <Card4 onMapClose={onMapClose} />}
-        {openCard === 5 && <Card5 onMapClose={onMapClose} />}
-        {openCard === 6 && <Card6 onMapClose={onMapClose} />}
-        {openCard === 7 && <Card7 onMapClose={onMapClose} />}
-        {openCard === 8 && <Card8 onMapClose={onMapClose} />}
+        {openCard === 4 && <Card4 onMapClose={onMapClose} img={image4} />}
+        {openCard === 5 && <Card5 onMapClose={onMapClose} img={image5} />}
+        {openCard === 6 && <Card6 onMapClose={onMapClose} img={image6} />}
+        {openCard === 7 && <Card7 onMapClose={onMapClose} img={image7} />}
+        {openCard === 8 && <Card8 onMapClose={onMapClose} img={image8} />}
         </>
         
     )
