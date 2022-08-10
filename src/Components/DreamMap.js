@@ -137,7 +137,7 @@ export default function DreamMap(){
     const[phone,setPhone] = useState(window.matchMedia("(max-width: 1060px)").matches)
     const onMapClick = (area, index) => {
     setOpenCard(index + 1)
-    console.log(openCard)
+
     }
     const onMapClose = () => {
         setOpenCard(0)
