@@ -5,7 +5,7 @@ import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import styled, {keyframes} from 'styled-components'
 import WebFont from 'webfontloader';
 import { HeaderContext } from '../App';
-const faceOff = require('./Epic_Dramatic_Full_No_Vocals-AudioTrimmer.com.mp3')
+
 const muteIcon = require('./mute-icon-2.jpg')
 
 
@@ -23,7 +23,7 @@ export const  ManifestoV2 = React.forwardRef((props,ref) => {
   const[sticky,setSticky] = useState({paddingTop:'0px'})
     const [activeIndex,setActiveIndex] = useState(0)
     const[phone,setPhone] = useState(window.matchMedia("(max-width: 1060px)").matches)
-    const audio = useRef(new Audio(faceOff))
+ 
     const context = useContext(HeaderContext)
     const musicBarRef = useRef(null)
     useEffect(() => {

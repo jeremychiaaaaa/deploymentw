@@ -28,7 +28,7 @@ const Card7 = ({onMapClose}) => {
       }
   return (
     <div className='routemap-content-container' style={{width:phone ? '100vw':'100%',display:'flex',justifyContent:!phone && 'center',position:phone ?'relative' : 'absolute', left:phone ? 0:'50%',    transform:phone ? 'translate(0,190px)' : 'translate(-50%,0)',top:phone ? '-70px':200 }}>
-    <div className='routemap-avatar' style={{width:phone ? '70vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',position:phone && 'absolute', left:phone &&'-110px'}} >
+    <div className='routemap-avatar' style={{width:phone ? '300px' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',position:phone && 'absolute', left:phone &&'-110px'}} >
 <img src={place} alt='avatar' style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone ? 'translateY(-130px)' : 'translateX(30px)'}} />
 </div>
 <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'75vh',overflow:'scroll', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
@@ -59,15 +59,15 @@ The community then volunteers their expertise to help.
 
  <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>Assistants Agency<br/> (Matching Holders with Assistants)</span>  <br/>
 
- <span style={{marginLeft:30}}>A system created for builders: an army of assistants <br/>& freelancers at your disposal.<br/>
+ <span style={{marginLeft:30}}>A system created for builders: an army of assistants <br/>& freelancers at your disposal.</span>
 
-As builders trying to break free of the system, cash flow can be tight.<br/>
+<span style={{marginTop:10,marginLeft:30}}>As builders trying to break free of the system, cash flow can be tight.</span>
 
-To use the services of our assistants and freelancers, <br/>you do not need to fork out any cash.<br/>
+<span style={{marginTop:10,marginLeft:30}}>To use the services of our assistants and freelancers, <br/>you do not need to fork out any cash.</span>
 
-Instead, they will receive a % stake in your project as payment, <br/>allowing you to scale without too much overhead.
+<span style={{marginLeft:30,marginTop:10}}>Instead, they will receive a % stake in your project as payment, <br/>allowing you to scale without too much overhead.</span>
 
-</span>
+
 <br/><br/>
 
      </span>

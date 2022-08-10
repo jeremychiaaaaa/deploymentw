@@ -16,7 +16,7 @@ import WebFont from 'webfontloader';
 
 
 const phonebackground = require('./dreammap-mobile-bg.jpeg')
-const trial = require('./dreammap_final.jpeg')
+const trial = require('./dreammap_final.jpg')
 
 
 

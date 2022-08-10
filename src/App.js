@@ -14,17 +14,22 @@ import Sanctuary from './Components/SanctuaryPage/Sanctuary';
 
 import ManifestoV2 from './Components/ManifestoV2';
 import DreamMap from './Components/DreamMap';
-const faceOff = require('./Components/Epic_Dramatic_Full_No_Vocals-AudioTrimmer.com.mp3')
+const faceOff = require('./Components/Hustle-Harder-Borrtex-AudioTrimm.mp3')
+
+const sanctuaryMusic = require('./Components/Cinematic-Nature-Ocean-Waves-Spl.mp3')
+
 
 export const HeaderContext = React.createContext()
 function App() {
 
 const audio = useRef(new Audio(faceOff))
+const sanctuaryAudio = useRef(new Audio(sanctuaryMusic))
+const ref= useRef({audio, sanctuaryAudio})
   const [phoneClicked, setPhoneClicked] = useState(false)
   const[musicPlay,setMusicPlay] = useState(false)
   const [stickyHeader,setStickyHeader] = useState(false)
 
-
+const[sanctuaryMusicStart,setSanctuaryMusicStart] = useState(false)
 
   return (
     <>
@@ -35,14 +40,14 @@ const audio = useRef(new Audio(faceOff))
            
             </Helmet>
    
-  <HeaderContext.Provider value={{phoneClicked,setPhoneClicked,musicPlay,setMusicPlay,stickyHeader,setStickyHeader, }}>
+  <HeaderContext.Provider value={{phoneClicked,setPhoneClicked,musicPlay,setMusicPlay,stickyHeader,setStickyHeader,sanctuaryMusicStart,setSanctuaryMusicStart }}>
     
  <Router>
-         <Header ref={audio} />
+         <Header ref={ref}/>
       <Routes>
        
         <Route path='/' element={<HomePage />}></Route>
-        <Route path='/vision' element={<Sanctuary />}></Route>
+        <Route path='/sanctuary' element={<Sanctuary />}></Route>
         <Route path='/manifesto' element={<ManifestoV2 ref={audio} />}></Route>
         
         <Route path='/dreamMap' element={<DreamMap />}></Route>

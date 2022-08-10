@@ -60,7 +60,7 @@ setStyles({marginBottom:poss})
     
    
       <h2
-      style={{...style, marginBottom: `${styles.marginBottom}px`,fontSize:phone ? '3rem' : '4.6rem',margin:'0 auto',textAlign:'center', transform:'translateY(-16vh)'}}
+      style={{...style, marginBottom: `${styles.marginBottom}px`,fontSize:phone ? '3rem' : '4.6rem',margin:'0 auto',textAlign:'center', transform:'translateY(-16vh)',lineHeight:'3.5rem'}}
      >SANCTUARY <br/> <span style={{fontSize:phone ? '1.5rem':'2.3rem'}}>Our Goal: To have multiple <span style={{transform:'translateY(-10%)'}}>sanctuaries across the world</span></span></h2>
    
       <div className='clouds'>

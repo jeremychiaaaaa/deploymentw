@@ -28,7 +28,7 @@ const Card6 = ({onMapClose}) => {
       }
   return (
     <div className='routemap-content-container' style={{width:phone ? '100vw':'100%',display:'flex',justifyContent:!phone && 'center',position:phone ?'relative' : 'absolute',  left:phone ? 0:'50%',    transform:phone ? 'translate(0,190px)' : 'translate(-50%,0)',top:phone ? '-70px':200 }}>
-    <div className='routemap-avatar' style={{width:phone ? '70vw' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',position:phone && 'absolute', left:phone &&'-110px'}} >
+    <div className='routemap-avatar' style={{width:phone ?'300px':'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',position:phone && 'absolute', left:phone &&'-110px'}} >
 <img src={place} alt='avatar' style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone ? 'translateY(-140px)' : 'translateX(40px)'}} />
 </div>
 <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'70vh',overflow:'scroll', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
@@ -55,17 +55,17 @@ const Card6 = ({onMapClose}) => {
 <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>$KYN</span>   
 <span  style={{marginLeft:30}}>A sustainable token economy requires a strong foundation and purpose for it.</span> 
 
-<span  style={{marginLeft:30}}>Until then, we will not rush out a token release.  </span>
+<span  style={{marginLeft:30,marginTop:10}}>Until then, we will not rush out a token release.  </span>
 
  <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>NFT Staking</span>   
 
  <span  style={{marginLeft:30}}>People who stake their NFTs might be eligible for special rewards.</span>
  <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>Open World Metaverse</span>   
- <span style={{marginLeft:30}}>Let's be real. We don't have billion-dollar budgets to compete with big web2 companies like Adidas, Meta or NVIDIA.
-<br/>
-Instead, we'll wait for a dominant metaverse to emerge before bringing KYNs in to hang out with the rest of the web3 community. 
-<br/>
-In the meantime, you can find us in our real life sanctuaries :)</span>
+ <span style={{marginLeft:30}}>Let's be real. We don't have billion-dollar budgets to compete with big web2 companies like Adidas, Meta or NVIDIA.</span>
+
+<span style={{marginLeft:30,marginTop:10}}>Instead, we'll wait for a dominant metaverse to emerge before bringing KYNs in to hang out with the rest of the web3 community.</span> 
+
+<span  style={{marginLeft:30,marginTop:10}}>In the meantime, you can find us in our real life sanctuaries :)</span>
 
 
 

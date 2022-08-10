@@ -414,7 +414,7 @@ scroll-padding-top: 70px;
 width:800px;
     height:620px;
 opacity:1;
-transform: translate(-10vw,-60px);
+transform: translate(-10vw,-40px);
 padding:1.5rem 0;
 padding-bottom:2rem;
 
@@ -440,7 +440,7 @@ padding-bottom:2rem;
     object-fit:contain;
     transform: scale(1.8);
     position: relative;
-    bottom:180px;
+    bottom:160px;
     right:15px;
 }
 .manifesto-card-v2-phone-content{

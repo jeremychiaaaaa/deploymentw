@@ -1,15 +1,15 @@
-import React, {useState, useRef, useContext,useEffect, } from 'react'
+import React, {useState, useRef, useContext,useEffect,useCallback } from 'react'
 
 import '../App.css'
 
 import { HeaderContext } from '../App.js'
 import WebFont from 'webfontloader';
 import {BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom'
-const faceOff = require('./Epic_Dramatic_Full_No_Vocals-AudioTrimmer.com.mp3')
+
 
 
 export const Header = React.forwardRef((props,ref) => {
- const audio = useRef(new Audio(faceOff))
+
 
   let phoneSubHead = {
     fontWeight:900, fontSize:'2rem',fontFamily:'Bree Serif',position:'relative', marginLeft:'10px'
@@ -25,6 +25,7 @@ export const Header = React.forwardRef((props,ref) => {
     position:'sticky',backgroundColor:'white'
 
   })
+    const {audio,sanctuaryAudio} = ref.current
     const [click, setClick] = useState(false)
     const[music, setMusic] = useState(false)
     const[dropDownButton, setDropDownButton] = useState(false)
@@ -50,23 +51,29 @@ export const Header = React.forwardRef((props,ref) => {
       }
     context.setStickyHeader(true)
     context.setMusicPlay(false)
-     console.log(context.stickyHeader) 
-      ref.current.pause()
-      ref.current.currentTime = 0
+    context.setSanctuaryMusicStart(true)
+      audio.current.pause()
+      audio.current.currentTime = 0
+      sanctuaryAudio.current.play()
+
   } 
 
     const manifestoClick = () => {
         if(phone){
             context.setPhoneClicked(!context.phoneClicked)
       }
+      sanctuaryAudio.current.pause()
+      sanctuaryAudio.current.currentTime = 0
         setMusic(true)
         setClick(!click)
         context.setMusicPlay(true)
-        ref.current.play()
- 
+        audio.current.play()
 
-        
     }
+
+
+
+    
     useEffect(() => {
         window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
        WebFont.load({
@@ -84,9 +91,29 @@ export const Header = React.forwardRef((props,ref) => {
           window.addEventListener('scroll', scroll)
    
             return () => window.removeEventListener("scroll", scroll)
-       
 
+     
+        
        }, [context.stickyHeader])
+
+
+       useEffect(() => {
+        const endedFunction = () => {
+        audio.current.currentTime = 0
+        audio.current.play()
+        }
+        if(audio && audio.current){
+          audio.current.addEventListener('ended',endedFunction)
+        }
+
+
+        return () => {
+          audio.current.removeEventListener('ended', endedFunction)
+        }
+       },[])
+
+
+
   return (
    <div className={phone ? click ? 'phone-active-header' : 'phone-header' : 'header'} style={sticky}>
 
@@ -120,7 +147,7 @@ export const Header = React.forwardRef((props,ref) => {
            </div>
            </div>
            <div  style={phone ? borderStyle :a }>
-           <NavLink to='/vision' style={ phone ? phoneSubHead : ({isActive}) => isActive ? {
+           <NavLink to='/sanctuary' style={ phone ? phoneSubHead : ({isActive}) => isActive ? {
               textDecoration:"underline"} : {color: 'black',fontSize:'0.9rem',letterSpacing:'0.1rem'}
            }  onClick={sanctuaryClick}><span className={!phone && "tabs"}>SANCTUARY</span></NavLink></div>
                <div  style={phone ? borderStyle :a }>
