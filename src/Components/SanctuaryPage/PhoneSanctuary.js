@@ -129,7 +129,7 @@ spending most of our time.</p>
                     <p style={{height:'100vh',display:'flex',flexDirection:'column',}}>
                     <span style={phoneStyle}>Sale Price : 1,500,000 USD</span>
                    <br/> <br/>
-                    <span style={phoneStyle}>No. of Bedrooms: 15</span>
+                    <span style={phoneStyle}>No. of Bedrooms: 12</span>
            <br/> <br/>
                     <span style={{...phoneStyle,width:'90%',}}>Location: <br/>
            <br/>
@@ -184,7 +184,7 @@ spending most of our time.</p>
                     
                     <span style={phoneStyle}>Sale Price : 1,200,000 USD</span>
                    <br/>
-                    <span style={phoneStyle}>No. of Bedrooms: 15</span>
+                    <span style={phoneStyle}>No. of Bedrooms: 10</span>
            <br/>
                     <span style={{...phoneStyle,width:'90%',}}>Location: <br/>
            <br/>

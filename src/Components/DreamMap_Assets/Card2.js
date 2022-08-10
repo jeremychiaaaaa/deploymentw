@@ -61,7 +61,7 @@ const Card2 = ({onMapClose,img}) => {
      
  
  
-   <span style={{marginLeft:30,marginTop:10}}>    Our ultimate long-term goal is to have multiple sanctuaries<br/> across the globe for all KYNs.</span>
+   <span style={{marginLeft:30,marginTop:10}}>    Our ultimate long-term goal is to have multiple Sanctuaries<br/> across the globe for all KYNs.</span>
      
  
    <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}> IRL Land Sale</span> 

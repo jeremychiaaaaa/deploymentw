@@ -66,7 +66,7 @@ const Card6 = ({onMapClose,img}) => {
 
 <span style={{marginLeft:30,marginTop:10}}>Instead, we'll wait for a dominant metaverse to emerge before bringing KYNs in to hang out with the rest of the web3 community.</span> 
 
-<span  style={{marginLeft:30,marginTop:10}}>In the meantime, you can find us in our real life sanctuaries :)</span>
+<span  style={{marginLeft:30,marginTop:10}}>In the meantime, you can find us in our real life Sanctuaries :)</span>
 
 
 
