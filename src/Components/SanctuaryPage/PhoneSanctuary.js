@@ -108,12 +108,12 @@ spending most of our time.</p>
   </div>
 
   <h2 style={{...subHead, marginTop:'60px',fontSize:'1.5rem',}}>FEASIBILITY AND SUSTAINABILITY</h2>
-  <p style={{...stylee, marginTop:'60px', marginLeft:'15px',width:'95%',height:'100vh'}}>1. Our real-life Sanctuaries have to be self-sustainable.<br/><br/>  So we will buy over existing Airbnb villas that already have a profitable track record and convert them into our Sanctuaries. <br/><br/>
+  <p style={{...stylee, marginTop:'60px', marginLeft:'15px',width:'95%',height:'100vh'}}>Our real-life Sanctuaries have to be self-sustainable.<br/><br/>  So we will buy over existing Airbnb villas that already have a profitable track record and convert them into our Sanctuaries. <br/><br/>
       Lots of admin, legal and regulatory frameworks  still need to be tested. We will start off with just one villa, and perfect the system before expanding.
 
 
 <br /> <br/>
-<span style={{fontWeight:'700px'}}>Sounds like a feat, but normalcy was never meant for us. We are here to redefine norms. #LFG</span></p>  
+<span style={{fontWeight:'700',fontFamily:'Bree Serif', fontSize:'1.1rem',}}>Sounds like a feat, but normalcy was never meant for us. We are here to redefine norms. #LFG</span></p>  
 
  
 
