@@ -17,7 +17,7 @@ const Card2 = ({onMapClose,img}) => {
         fontWeight:200, fontSize:'1.2rem',fontFamily:'Dosis',color:'black'
       }
       let phoneStyle={
-        fontWeight:200, fontSize:'1.1rem',fontFamily:'Dosis',
+        fontWeight:200, fontSize:'1rem',fontFamily:'Dosis',
       }
       let phoneSubHead = {
         fontWeight:900, fontSize:'1.6rem',fontFamily:'Bree Serif',position:'relative',color:'black',marginTop:'30px'
@@ -61,7 +61,7 @@ const Card2 = ({onMapClose,img}) => {
      
  
  
-   <span style={{marginLeft:30,marginTop:10}}>    Our ultimate long-term goal is to have multiple Sanctuaries<br/> across the globe for all KYNs.</span>
+   <span style={{marginLeft:30,marginTop:10}}>    Our ultimate long-term goal is to have multiple Sanctuaries{!phone&&<br/>} across the globe for all KYNs.</span>
      
  
    <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}> IRL Land Sale</span> 
@@ -70,10 +70,10 @@ const Card2 = ({onMapClose,img}) => {
 <span style={{marginLeft:30,marginTop:10}}> Rather than a virtual land sale, why not have a real life one?</span>
 
 
- <span style={{marginLeft:30,marginTop:10}}>Land that is part of our (future) castle's estate will be<br/> fractionalised  into NFT fractions.</span> 
+ <span style={{marginLeft:30,marginTop:10}}>Land that is part of our (future) castle's estate will be{!phone&&<br/>}fractionalised  into NFT fractions.</span> 
 
 
-<span style={{marginLeft:30,marginTop:10}}> Holders of these fractions could vote on how they want to<br/> develop that piece of land.</span>
+<span style={{marginLeft:30,marginTop:10}}> Holders of these fractions could vote on how they want to{!phone&&<br/>} develop that piece of land.</span>
 
  
      </span>

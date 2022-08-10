@@ -17,7 +17,7 @@ const Card3 = ({onMapClose,img}) => {
         fontWeight:200, fontSize:'1.2rem',fontFamily:'Dosis',color:'black'
       }
       let phoneStyle={
-        fontWeight:200, fontSize:'1.1rem',fontFamily:'Dosis',
+        fontWeight:200, fontSize:'1rem',fontFamily:'Dosis',
       }
       let phoneSubHead = {
         fontWeight:900, fontSize:'1.6rem',fontFamily:'Bree Serif',position:'relative',color:'black',marginTop:'30px'
