@@ -930,7 +930,7 @@ border-radius: 10px;
     background-image: url('General\ Assets/dreammap-strip-3.jpeg');
     width:100%;
    background-size: cover;
-    height:130px;
+    height:230px !important;
    
 }
 
