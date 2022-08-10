@@ -297,7 +297,7 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
         
   
     </div>
-    <div className='art-card-row'>
+    <div className='art-card-row' style={{zIndex:5}}>
     {row2.map((i,index) => 
             (
                 <div  className='art-card-frame'
@@ -312,7 +312,7 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
             )}
        
     </div>
-    <div className='art-card-row'>
+    <div className='art-card-row' >
     {row3.map((i,index) => 
             (
                 <div  className='art-card-frame'
