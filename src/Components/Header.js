@@ -45,6 +45,7 @@ export const Header = React.forwardRef((props,ref) => {
       
         ref.current.pause()
         ref.current.currentTime = 0
+        console.log('hi')
     } 
     const sanctuaryClick = () => {
       if(phone){
@@ -77,15 +78,16 @@ export const Header = React.forwardRef((props,ref) => {
       if(phone){
         context.setPhoneClicked(!context.phoneClicked)
       }
-
+      context.setLoadAvatars(true)
       context.setStickyHeader(false)
       context.setMusicPlay(false)
       
-        ref.current.pause()
-        ref.current.currentTime = 0
-
-        context.setLoadAvatars(true)
-
+      audio.current.pause()
+      audio.current.currentTime = 0
+      sanctuaryAudio.current.pause()
+      sanctuaryAudio.current.currentTime = 0
+        
+      console.log('hi')
     }
 
 
@@ -169,7 +171,7 @@ export const Header = React.forwardRef((props,ref) => {
                <div  style={phone ? borderStyle :a }>
            <NavLink to='/dreammap' style={ phone ? phoneSubHead : ({isActive}) => isActive ? {
               textDecoration:"underline"} : {color: 'black',fontSize:'0.9rem',letterSpacing:'0.1rem' }
-           } onClick={handleClick}><span className={!phone && "tabs"} >DREAM MAP</span></NavLink></div>
+           } onClick={dreamMapClick}><span className={!phone && "tabs"} >DREAM MAP</span></NavLink></div>
             <div  style={phone ? borderStyle :a }>
            <NavLink to='/team' style={ phone ? phoneSubHead : ({isActive}) => isActive ? {
               textDecoration:"underline"} : {color: 'black',fontSize:'0.9rem',letterSpacing:'0.1rem' }

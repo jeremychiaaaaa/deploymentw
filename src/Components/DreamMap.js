@@ -168,7 +168,8 @@ export default function DreamMap(){
             new Image().src = image
           })
        }
-       },[context.loadAvatars] )
+       console.log(context.loadAvatars)
+       },[context.loadAvatars])
       
       let phoneStyle={
         fontWeight:200, fontSize:'1.1rem',fontFamily:'Dosis',
