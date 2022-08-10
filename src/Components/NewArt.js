@@ -150,7 +150,7 @@ function handleTouchMove(evt) {
     </div>
     <div style={{width:'100vw', height:'60px', backgroundColor:'white',position:'relative',display:'flex',marginTop:15,}}> 
 
-  <div style={{width:'95%',display:'flex', justifyContent:'flex-end',textAlign:'right',margin:'0 auto',height:'fit-content',}}>
+  <div style={{width:'95%',display:'flex', justifyContent:'flex-end',textAlign:'right',margin:'0 auto',height:'140px',}}>
     <span style={{...phoneStyle,wordBreak:'break-word',fontFamily:'Smooch Sans',fontWeight:800}}>
     <span>10,200 unique avatars. Your KYN alter-egos.<br/> Experience The Sanctuary through them.</span>
 <br/>
@@ -158,7 +158,7 @@ Can’t keep those sneaky werewolves from shapeshifting.<br/> If only we knew wh
    </div>
     </div>
     
-    <div  style={{display:context.phoneClicked ? 'none' : 'flex', flexDirection:'column',width:'100%',gap:15,marginTop:65,}} className='art-parent-container' >
+    <div  style={{display:context.phoneClicked ? 'none' : 'flex', flexDirection:'column',width:'100%',gap:15,marginTop:85   ,}} className='art-parent-container' >
    
        
     <Carousel

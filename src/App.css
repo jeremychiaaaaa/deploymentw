@@ -446,12 +446,12 @@ padding-bottom:2rem;
 }
 .manifesto-card-v2-phone-content{
    display:flex;
-   background-color: lightgray;
+   background-color: white;
    flex-direction: column;
 width:100vw;
 justify-content: center;
 align-items:center;
-   opacity:0.95;
+   opacity:1;
 height:100%;
 }
 
@@ -978,7 +978,7 @@ border:none;
   height:auto;
     background-position: center;
     background-size:contain;
-transform:scaleY(1.55) scaleX(1.55) translateY(-7px) translateX(1px);
+transform:scaleY(1.55) scaleX(1.55) translateY(-7px) translateX(0px);
 border:none;
 }
 .mouse-six {
@@ -1005,7 +1005,7 @@ border:none;
   height:auto;
     background-position: center;
     background-size:contain;
-transform:scaleY(1.55) scaleX(1.55) translateY(-6px) translateX(2px);
+transform:scaleY(1.45) scaleX(1.45) translateY(-6px) translateX(2px);
 border:none;
 }
 

@@ -122,7 +122,7 @@ export const  ManifestoV2 = React.forwardRef((props,ref) => {
             <div className='image-phone-manifesto' >
                 <img src={place } alt='avatar' />
                 </div>
-      <div style={{display:'flex',flexDirection:'column',backgroundColor:'lightgray'}}>
+      <div style={{display:'flex',flexDirection:'column',backgroundColor:'white'}}>
       <div className='manifesto-card-v2-phone-content'>
         <div style={{marginLeft:'15%',marginTop:20}}>
           

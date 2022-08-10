@@ -30,7 +30,7 @@ import WebFont from 'webfontloader';
 
 import { HeaderContext } from '../App.js'
 
-const phonebackground = require('./dreammap-mobile-bg.jpeg')
+const phonebackground = require('./KYN web dreammap bg mobile.jpg')
 const trial = require('./dreammap_final.jpg')
 
 

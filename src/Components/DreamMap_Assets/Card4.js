@@ -34,14 +34,14 @@ const Card4 = ({onMapClose,img}) => {
 <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'75vh', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
  
   <motion.button
-  style={{backgroundColor:'black',width:'100%',fontFamily:'Bree Serif', fontSize:'1.2rem', color:'white',height:50}}
+  style={{backgroundColor:'black',width:'100%',fontFamily:'Bree Serif', fontSize:'1.2rem', color:'white',height:phone ? 50 :40,letterSpacing:'0.5rem',}}
   onClick={onMapClose}
-  whileHover={{backgroundColor:'rgba(220,220,220,0.5)',opacity:1, color:'black'}}
+  whileHover={{backgroundColor:'white',opacity:1, color:'black'}}
   >
    BACK TO MAP
   </motion.button>
  <div style={{width:phone ? '100vw':'100%', display:'flex', flexDirection:'column', backgroundColor:'white', justifyContent:phone ?'flex-start':'flex-start', alignItems:phone ? 'flex-start' :'center', opacity:0.95, height:phone ? '100vh':'100%', }}>
-   <div style={{marginLeft:phone ? '10%' :'5%',width:'82%',marginTop:phone ? 30 : 0}}>
+   <div style={{marginLeft:phone ? '10%' :'14%',width:'82%',marginTop:phone ? 30 : 0}}>
    <h2  style={{...phone ? phoneSubHead : subHead,fontSize:phone ? '1.8rem':'2.3rem'}}>Community</h2>
 
    

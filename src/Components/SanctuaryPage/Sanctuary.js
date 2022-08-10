@@ -35,17 +35,9 @@ function Sanctuary() {
   }
 const[styles,setStyles] = useState({marginBottom:0})
 const[phone,setPhone] = useState(window.matchMedia("(max-width: 1060px)").matches)
-let style={
 
-  fontFamily:'Bree Serif', fontSize:'4.6rem', fontWeight:800, color:'black',
-}
 useEffect(() => {
-  window.addEventListener('scroll', function(){
-    let pos = window.scrollY
-    let poss = pos * 2
-    console.log(poss)
-setStyles({marginBottom:poss})
-  })
+ 
   WebFont.load({
     google: {
       families: ['Bree Serif', 'Dosis']
@@ -60,7 +52,7 @@ setStyles({marginBottom:poss})
     
    
       <h2
-      style={{...style, marginBottom: `${styles.marginBottom}px`,fontSize:phone ? '3rem' : '4.6rem',margin:'0 auto',textAlign:'center', transform:'translateY(-16vh)',lineHeight:'3.5rem'}}
+      style={{fontFamily:'Bree Serif', fontWeight:800, fontSize:phone ? '3rem' : '4.6rem',margin:'0 auto',textAlign:'center', transform:'translateY(-16vh)',lineHeight:'3.5rem'}}
      >SANCTUARY <br/> <span style={{fontSize:phone ? '1.5rem':'2.3rem'}}>Our Goal: To have multiple <span style={{transform:'translateY(-10%)'}}>Sanctuaries across the world</span></span></h2>
    
       <div className='clouds'>
