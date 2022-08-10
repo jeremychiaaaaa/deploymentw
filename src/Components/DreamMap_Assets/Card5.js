@@ -49,9 +49,9 @@ const Card5 = ({onMapClose,img}) => {
    <span style={{...phone ? phoneStyle : style,display:'flex', justifyContent:'center', alignItems:'flex-start', flexDirection:'column',width:phone ? '90%':'90%'}}>
    <span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>Seminars</span> 
 
-  <span style={{marginLeft:30}}> For the learners among us who strive to become<br/> the best version of themselves. </span> 
+  <span style={{marginLeft:30}}> For the learners among us who strive to become{!phone && <br/>} the best version of themselves. </span> 
 
-<span  style={{marginLeft:30,marginTop:10}} >We will only hold these if we can get big names on board<br/> that will value-add to our community.</span>
+<span  style={{marginLeft:30,marginTop:10}} >We will only hold these if we can get big names on board{!phone && <br/>} that will value-add to our community.</span>
 
 
 

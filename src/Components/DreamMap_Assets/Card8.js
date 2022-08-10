@@ -62,8 +62,8 @@ For example, <br/>
     <span style={{marginLeft:20,marginTop:10}}> 4. Gourmet pet treats</span>
     <span style={{marginLeft:20,marginTop:10}}>5. Luxury grooming services</span>  
       
-     <span style={{marginLeft:20,marginTop:10}}>6. Recerational spots to bring it to:</span> <br/>
-      <span style={{display:'flex', flexDirection:'row',gap:5,marginLeft:40 }}>●<span>Maybe even travel the world to visit our different Sanctuaries,or</span></span>
+     <span style={{marginLeft:20,marginTop:10}}>6. Recerational spots to bring it to:</span> 
+      <span style={{display:'flex', flexDirection:'row',gap:5,marginLeft:40,marginTop:10 }}>●<span>Maybe even travel the world to visit our different Sanctuaries,or</span></span>
       <span style={{display:'flex', flexDirection:'row',gap:5,marginLeft:40,marginTop:10}}>●<span>Attend our in-person events</span></span>
 <br/>
      <span  style={{marginLeft:20,}}>IP could even be created out of this!</span> 
