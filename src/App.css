@@ -431,6 +431,7 @@ padding-bottom:2rem;
     position:absolute;
     top:100vw;
     left:0;
+    
 }
 
 .image-manifesto > img {
@@ -1020,7 +1021,6 @@ border:none;
 
 
 
-
 .phone-art-button {
     cursor:pointer;
     position:absolute;
@@ -1040,6 +1040,7 @@ border:none;
 
  
 .art-phone-image-card{
+
 
     box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
 }
@@ -1063,6 +1064,9 @@ border:none;
     margin-left:30px;
 
 }
+
+
+
 
 .art-card {
     width:clamp(180px,20%,250px);
@@ -1090,6 +1094,20 @@ border:none;
     width:clamp(720px,50%,85%);
     margin-left:80px;
 }
+
+
+@media screen and (min-width: 670px) and (max-width: 960px) {
+    .art-card-row{
+        width:clamp(65%,500px,500px);
+        
+     }
+     .art-avatar{
+         width:clamp(300px,25%,400px);
+       
+     }
+} 
+
+
 
 /*end of art section */
 

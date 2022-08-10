@@ -48,7 +48,7 @@ spending most of our time.</span>
         
         <div className='sanctuary-content-3-text' style={{backgroundColor:'white',padding:1}}>
         <h2 style={{...subHead,textAlign:'center',marginTop:40}}>FEASIBILITY AND SUSTAINABILITY</h2>
-      <p style={{...stylee, marginTop:'10px',marginLeft:'60px',display:'flex',justifyContent: 'center',width:'85%',}}>Our real-life sanctuaries have to be self-sustainable. So we will buy over existing Airbnb villas that already have a profitable track record and convert them into our sanctuaries. <br/><br/>
+      <p style={{...stylee, marginTop:'10px',marginLeft:'60px',display:'flex',justifyContent: 'center',width:'85%',}}>Our real-life Sanctuaries have to be self-sustainable. So we will buy over existing Airbnb villas that already have a profitable track record and convert them into our sanctuaries. <br/><br/>
       Lots of admin, legal and regulatory frameworks  still need to be tested. We will start off with just one villa, and perfect the system before expanding.
 
 <br /> <br/>

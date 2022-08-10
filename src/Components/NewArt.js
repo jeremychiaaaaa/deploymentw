@@ -36,7 +36,7 @@ export default function NewArt(){
     const ref = useRef(null)
     const phoneSliderRef = useRef(null)
     const [phoneSlideUp,setPhoneSlideUp] = useState(false)
-    const[phone,setPhone] = useState(window.matchMedia("(max-width: 1060px)").matches)
+    const[phone,setPhone] = useState(window.matchMedia("(max-width: 670px)").matches)
     const [card1,setCard1] = useState(false)
     const [card2,setCard2] = useState(false)
     const[clickSlider,setClickSlider] = useState(false)
@@ -63,7 +63,7 @@ export default function NewArt(){
        fontWeight:900, fontSize:'1.6rem',fontFamily:'Bree Serif',position:'relative', marginTop:'20px', marginLeft:'10px', letterSpacing:4.4, 
        }
       useEffect(() => {
-        window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
+        window.matchMedia("(max-width: 670px)").addEventListener('change', e => setPhone(e.matches))
         WebFont.load({
           google: {
             families: ['Droid Sans', 'Chilanka','Roboto Condensed','Bree Serif','Dosis']
@@ -140,7 +140,7 @@ function handleTouchMove(evt) {
        
         <>
         {phone ? 
-        <div style={{scrollBehavior:'smooth',overflow:'visible'}} onClick={onClose}>
+        <div style={{scrollBehavior:'smooth',overflow:'visible',overflowX:'hidden'}} onClick={onClose}>
         <div style={{width:'100%',height:'100vh', position:'relative',display:'flex',flexDirection:'column',alignItems:'center',}}>
            <div style={{width:'100vw', height:'60px', backgroundColor:'white',position:'relative',display:'flex',marginTop:15,}}> 
   <div style={{width:'35%'}}></div>
@@ -150,7 +150,7 @@ function handleTouchMove(evt) {
     </div>
     <div style={{width:'100vw', height:'60px', backgroundColor:'white',position:'relative',display:'flex',marginTop:15,}}> 
 
-  <div style={{width:'90%',display:'flex', justifyContent:'flex-end',textAlign:'right',margin:'0 auto',height:'fit-content',}}>
+  <div style={{width:'95%',display:'flex', justifyContent:'flex-end',textAlign:'right',margin:'0 auto',height:'fit-content',}}>
     <span style={{...phoneStyle,wordBreak:'break-word',fontFamily:'Smooch Sans',fontWeight:800}}>
     <span>10,200 unique avatars. Your KYN alter-egos.<br/> Experience The Sanctuary through them.</span>
 <br/>
@@ -158,8 +158,9 @@ Can’t keep those sneaky werewolves from shapeshifting.<br/> If only we knew wh
    </div>
     </div>
     
-    <div  style={{display:context.phoneClicked ? 'none' : 'flex', flexDirection:'column',width:'100%',height:'100%',gap:15,marginTop:65}} className='art-parent-container' >
+    <div  style={{display:context.phoneClicked ? 'none' : 'flex', flexDirection:'column',width:'100%',gap:15,marginTop:65,}} className='art-parent-container' >
    
+       
     <Carousel
     animation='slide'
     duration={400}
@@ -227,7 +228,11 @@ Can’t keep those sneaky werewolves from shapeshifting.<br/> If only we knew wh
     </div>
     </Carousel>
 
-        <div ref={phoneSliderRef} style={{position:'absolute',bottom:-100,margin:'0 auto',display:'flex',justifyContent:'center',alignItems:'center',left:'50%',zIndex:10,flexDirection:'column'}}  >
+        
+          <div style={{position:'absolute',left:-110, transform:'translateY(180px)'}}>
+        <img src={phoneAvatar} style={{width:'100%', height:'auto', objectFit:'cover',transform:'scale(1.4) translateY(60px)'}} alt='avatar' />
+        </div>
+       <div ref={phoneSliderRef} style={{position:'absolute',bottom:-150,margin:'0 auto',display:'flex',justifyContent:'center',alignItems:'center',left:'50%',zIndex:10,flexDirection:'column'}}  >
         <Arrow  className="angle right" x="0px" y="0px" viewBox="0 0 17.8 27.8" style={{overflow:"visible",enableBackground:"new 0 0 17.8 27.8",width:'15px',transform:'rotate(-90deg)', animationPlayState:phoneSlideUp ? 'paused' :'running'}} onClick={() =>setPhoneSlideUp(true)}>
         <path d="M17.8,10.1C12.2,10.1,7.7,5.6,7.7,0H0c0,5.4,2.5,10.6,6.7,13.9C2.5,17.3,0,22.4,0,27.8h7.7	c0-5.6,4.5-10.1,10.1-10.1l0,0V10.1z" style={{pointerEvents:'auto'}} ></path>
    </Arrow>
@@ -240,14 +245,10 @@ Can’t keep those sneaky werewolves from shapeshifting.<br/> If only we knew wh
         
           </Drawer>
         </div>
-        <div style={{position:'absolute',bottom:-180,width:'100vw',left:-110}}>
-        <img src={phoneAvatar} style={{width:'100%', height:'auto', objectFit:'cover',transform:'scale(1.4) translateY(60px)'}} alt='avatar' />
-        </div>
+   
     </div>
-   
-   
-       
-   
+
+
             
 
    
@@ -281,7 +282,7 @@ Can’t keep those sneaky werewolves from shapeshifting.<br/> If only we knew wh
           
             <div style={{width:'100vw', display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center',margin:'0 auto'}}>          
             <div  className='art-gallery-container'>
-          <div className='art-card-row'>
+          <div className='art-card-row'style={{zIndex:!clickSlider && 5}}>
             {row1.map((i,index) => 
             (
                 <div   className='art-card-frame'
@@ -297,7 +298,7 @@ Can’t keep those sneaky werewolves from shapeshifting.<br/> If only we knew wh
         
   
     </div>
-    <div className='art-card-row' style={{zIndex:clickSlider ? -1 : 5}}>
+    <div className='art-card-row' style={{zIndex:!clickSlider && 5}}>
     {row2.map((i,index) => 
             (
                 <div  className='art-card-frame'
@@ -312,7 +313,7 @@ Can’t keep those sneaky werewolves from shapeshifting.<br/> If only we knew wh
             )}
        
     </div>
-    <div className='art-card-row' >
+    <div className='art-card-row'style={{zIndex:!clickSlider && 5}} >
     {row3.map((i,index) => 
             (
                 <div  className='art-card-frame'

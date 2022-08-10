@@ -31,7 +31,7 @@ const Card1 = ({onMapClose,img}) => {
                  <div className='routemap-avatar' style={{width:phone ? '300px' :'35%',transform:!phone &&'scale(0.9)',alignSelf:!phone &&'flex-end',position:phone && 'absolute', left:phone &&'-110px'}} >
         <img src={img} alt='avatar' style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone && 'translateY(-145px)'}} />
         </div>
-            <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'80vh',overflow:'scroll', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column', }}>
+            <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'80vh',overflow:!phone &&'scroll', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column', }}>
               
                <motion.button
                style={{backgroundColor:'black',width:'100%',fontFamily:'Bree Serif', fontSize:'1.2rem', color:'white'}}
@@ -61,8 +61,8 @@ overused and cliché, community will always be our #1 priority.</span>
 <span style={{marginLeft:30, marginTop:10}}>Normalcy was never meant for us because we are meant for so much more. </span>
 <span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>3. Endgame Mentality</span>
 
-<span style={{marginLeft:30}}>Always have the end in mind. Never allow yourself to lose sight of the
-bigger picture.</span>
+<span style={{marginLeft:30}}>Always have the end in mind.<br/></span> 
+<span style={{marginLeft:30,marginTop:10}}>Never allow yourself to lose sight of the bigger picture.</span>
 
 <span  style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4}}>4. Kaizen</span>
 
