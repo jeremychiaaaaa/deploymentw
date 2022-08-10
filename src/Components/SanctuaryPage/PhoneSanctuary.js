@@ -93,7 +93,7 @@ const PhoneSanctuary = () => {
 
         <h2 style={{...subHead, marginTop:'60px'}}>THE CONCEPT</h2>
       <p style={{...stylee, marginTop:'60px', marginLeft:'10px',width:'95%',height:'100vh' }}>"As terrifying and painful as reality can be, it's also... the only place that... you can get a decent
-meal. Because, reality... is real." (James Halliday, Ready Player One, 2018)<br/><br/>
+meal. Because, reality... is real."<br/><span style={{fontStyle:'italic',textAlign:'center'}}>(James Halliday, Ready Player One, 2018)</span> <br/><br/>
 While the "Metaverse" is an exciting concept, the technology for a metaverse like Ready Player One's will not arrive for many years to come.<br/><br/>
 Meanwhile, we choose to focus on reality, because reality is still where we are going to be
 spending most of our time.</p>
@@ -108,10 +108,9 @@ spending most of our time.</p>
   </div>
 
   <h2 style={{...subHead, marginTop:'60px',fontSize:'1.5rem',}}>FEASIBILITY AND SUSTAINABILITY</h2>
-  <p style={{...stylee, marginTop:'60px', marginLeft:'15px',width:'95%',height:'100vh'}}>1. Lots of admin, legal, and regulatory frameworks need to be tested.<br /><br/>
-We will start off with just one villa, and perfect the system before expanding. <br/><br/>
-2. Our real-life sanctuaries have to be self-sustainable. <br />
-So we will buy over existing Airbnb villas that already have a profitable track record
+  <p style={{...stylee, marginTop:'60px', marginLeft:'15px',width:'95%',height:'100vh'}}>1. Our real-life Sanctuaries have to be self-sustainable.<br/><br/>  So we will buy over existing Airbnb villas that already have a profitable track record and convert them into our Sanctuaries. <br/><br/>
+      Lots of admin, legal and regulatory frameworks  still need to be tested. We will start off with just one villa, and perfect the system before expanding.
+
 
 <br /> <br/>
 <span style={{fontWeight:'700px'}}>Sounds like a feat, but normalcy was never meant for us. We are here to redefine norms. #LFG</span></p>  
@@ -128,7 +127,7 @@ So we will buy over existing Airbnb villas that already have a profitable track 
   <div className='villa-1-content' style={{width:'95%',marginLeft:'20px',}} >
                     <h2 style={{fontSize:'2.4rem', fontWeight:700, fontFamily:'Bree Serif',marginBottom:15,marginLeft:10,marginTop:20}}>Villa 1</h2>
                     <p style={{height:'100vh',display:'flex',flexDirection:'column',}}>
-                    <span style={phoneStyle}>Sale Price : 2,700,000 USD</span>
+                    <span style={phoneStyle}>Sale Price : 1,500,000 USD</span>
                    <br/> <br/>
                     <span style={phoneStyle}>No. of Bedrooms: 15</span>
            <br/> <br/>
@@ -151,7 +150,7 @@ So we will buy over existing Airbnb villas that already have a profitable track 
 <SwiperSlide className='phone-sanctuary-card' >
   
   <div className='sanctuary-carousel-image' >
-   <SanctuaryImageCarouselTwo />
+   <SanctuaryImageCarouselThree />
   </div>
 
   <div className='villa-1-content' style={{width:'95%',marginLeft:'20px',}} >
@@ -177,13 +176,13 @@ So we will buy over existing Airbnb villas that already have a profitable track 
 <SwiperSlide className='phone-sanctuary-card' >
   
   <div className='sanctuary-carousel-image' >
-   <SanctuaryImageCarouselThree />
+   <SanctuaryImageCarouselTwo />
   </div>
   <div style={{height:'110vh', backgroundColor:'white', }}>
   <div className='villa-1-content' style={{width:'95%',marginLeft:'20px',}} >
                     <h2 style={{fontSize:'2.4rem', fontWeight:700, fontFamily:'Bree Serif',marginBottom:15,marginLeft:10,marginTop:20}}>Villa 3</h2>
                     
-                    <span style={phoneStyle}>Sale Price : 2,700,000 USD</span>
+                    <span style={phoneStyle}>Sale Price : 1,200,000 USD</span>
                    <br/>
                     <span style={phoneStyle}>No. of Bedrooms: 15</span>
            <br/>
