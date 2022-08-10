@@ -297,7 +297,7 @@ Can’t keep those sneaky werewolves from shapeshifting.<br/> If only we knew wh
         
   
     </div>
-    <div className='art-card-row' style={{zIndex:5}}>
+    <div className='art-card-row' style={{zIndex:clickSlider ? -1 : 5}}>
     {row2.map((i,index) => 
             (
                 <div  className='art-card-frame'
