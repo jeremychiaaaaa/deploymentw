@@ -199,7 +199,7 @@ It embodies our dreams and aspirations.<br/> Together, we will build The Sanctua
   </p>
 </div>
 <div style={{width:phone ? '90%' :'70%',display:'flex', justifyContent:phone ? 'flex-end':'flex-start',marginRight:phone && '5%', }}>
-  <h2  style ={{...subHeaderStyle, fontSize:phone ? '2.1rem' : '4rem',color:'black',fontFamily:'Bree Serif',transform:phone ? openCard ? 'translateY(30px)' : '' : ''}}><span style={{fontFamily:'Bree Serif', fontWeight:100,opacity:0.2,fontSize:phone ? '2.1rem' : '4rem', }}>OUR</span>DREAMMAP</h2>
+  <h2  style ={{...subHeaderStyle, fontSize:phone ? '2.1rem' : '4rem',color:'black',fontFamily:'Bree Serif',transform:phone ? openCard ? 'translateY(20px)' : '' : ''}}><span style={{fontFamily:'Bree Serif', fontWeight:100,opacity:0.2,fontSize:phone ? '2.1rem' : '4rem', }}>OUR</span>DREAMMAP</h2>
  </div>
 
   </div>

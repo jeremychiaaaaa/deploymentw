@@ -32,14 +32,15 @@ const Card2 = ({onMapClose,img}) => {
 <img src={img} alt='avatar' style={{width:phone ? '100%':'350px',height:phone ? '100%':'75vh',zIndex:10, objectFit:'cover',transform:phone && 'translateY(-152px)'}} />
 </div>
 <div className='routemap-content-wrapper' style={{width:!phone &&'800px',height:!phone &&'75vh',overflow:!phone && 'scroll', backgroundColor:'white',opacity:0.8,transform:!phone && 'translateX(-15%)', display:phone && 'flex', flexDirection: phone && 'column' }}>
- <div style={{height:40,width:'100%', backgroundColor:'black'}}>
-  <motion.button
-  style={{backgroundColor:'black',width:'100%',fontFamily:'Bree Serif', fontSize:'1.2rem', color:'white',height:phone ? 50 :40,letterSpacing:'0.5rem',position:'fixed',top:0,}}
-  onClick={onMapClose}
-  whileHover={{backgroundColor:'white',opacity:1, color:'black'}}
-  >
-   BACK TO MAP
-  </motion.button>
+ <div style={{height:50,width:'100%', backgroundColor:'black'}}>
+ <motion.button
+               style={{backgroundColor:'black',width:'100%',fontFamily:'Bree Serif', fontSize:'0.8rem', color:'white',height:phone ? 50 :40,letterSpacing:'0.5rem', }}
+               onClick={onMapClose}
+               whileHover={{backgroundColor:'white',opacity:1, color:'black',}}
+
+               >
+                <span style={{marginLeft:30}}>BACK TO MAP</span>
+               </motion.button>
   </div>
  <div style={{width:phone ? '100vw':'100%', display:'flex', flexDirection:'column', backgroundColor:'white', justifyContent:phone ?'flex-start' :'flex-start', alignItems:phone ? 'flex-start' :'center', opacity:0.95, height:phone ? '100vh':'100%',}}>
    <div style={{marginLeft:phone ? '10%' :'14%',width:'80%',marginTop:phone && 30}}>

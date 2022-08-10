@@ -36,10 +36,10 @@ const Card1 = ({onMapClose,img}) => {
                <motion.button
                style={{backgroundColor:'black',width:'100%',fontFamily:'Bree Serif', fontSize:'0.8rem', color:'white',height:phone ? 50 :40,letterSpacing:'0.5rem', }}
                onClick={onMapClose}
-               whileHover={{backgroundColor:'white',opacity:1, color:'black'}}
+               whileHover={{backgroundColor:'white',opacity:1, color:'black',}}
 
                >
-                BACK TO MAP
+                <span style={{marginLeft:30}}>BACK TO MAP</span>
                </motion.button>
               <div style={{width:phone ? '100vw':'100%', display:'flex', flexDirection:'column', backgroundColor:'white', justifyContent:phone ?'flex-start':'flex-start', alignItems:phone ? 'flex-start' :'center', opacity:0.95, height:phone ? '100vh':'100%', }}>
                 <div style={{marginLeft:phone ? '10%' :'14%',width:'82%'}}>

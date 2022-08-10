@@ -1097,14 +1097,12 @@ border:none;
 
 
 @media screen and (min-width: 670px) and (max-width: 960px) {
-    .art-card-row{
-        width:clamp(65%,500px,500px);
-        
-     }
-     .art-avatar{
-         width:clamp(300px,25%,400px);
-       
-     }
+ .art-card-row {
+    width:clamp(520px,60%,80%);
+ }
+ .art-avatar{
+    width:clamp(380px,450px,650px);
+ }
 } 
 
 
