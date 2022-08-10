@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState,useEffect,useContext} from 'react'
 
 import Card1 from './DreamMap_Assets/Card1.js'
 import Card2 from './DreamMap_Assets/Card2.js'
@@ -9,11 +9,18 @@ import Card6 from './DreamMap_Assets/Card6.js'
 import Card7 from './DreamMap_Assets/Card7.js'
 import Card8 from './DreamMap_Assets/Card8.js'
 
+import image1 from './DreamMap_Assets/Avatars/web art dreammap bri main v4 (1).webp'
+
+import image2 from './DreamMap_Assets/Avatars/web art dreammap bri irl sanctuaries.webp'
+
+import image3 from './DreamMap_Assets/Avatars/web art dreammap bri phy merch.webp'
+
+
 
 import { ImageMap } from '@qiuz/react-image-map';
 import WebFont from 'webfontloader';
 
-
+import { HeaderContext } from '../App.js'
 
 const phonebackground = require('./dreammap-mobile-bg.jpeg')
 const trial = require('./dreammap_final.jpg')
@@ -142,7 +149,12 @@ export default function DreamMap(){
     const onMapClose = () => {
         setOpenCard(0)
     }  
-    console.log(mouseOver1)
+    const context = useContext(HeaderContext)
+
+
+
+
+
     useEffect(() => {
         window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
         WebFont.load({
@@ -150,9 +162,14 @@ export default function DreamMap(){
             families: ['Bree Serif','Dosis','Smooch Sans']
           }
         });
-       
+       if(context.loadAvatars === true){
+          let imageList = [image1,image2,image3,]
+          imageList.forEach((image) => {
+            new Image().src = image
+          })
+       }
        }, )
-       
+      
       let phoneStyle={
         fontWeight:200, fontSize:'1.1rem',fontFamily:'Dosis',
       }
@@ -184,13 +201,13 @@ It embodies our dreams and aspirations.<br/> Together, we will build The Sanctua
         
   
         {openCard === 1 && (
-            <Card1 onMapClose={onMapClose}/>
+            <Card1 onMapClose={onMapClose} img={image1}/>
         )}
         {openCard === 2 && (
            
-          <Card2 onMapClose={onMapClose} />
+          <Card2 onMapClose={onMapClose} img={image2} />
         )}
-        {openCard === 3 && <Card3 onMapClose={onMapClose} />}
+        {openCard === 3 && <Card3 onMapClose={onMapClose} img={image3} />}
         {openCard === 4 && <Card4 onMapClose={onMapClose} />}
         {openCard === 5 && <Card5 onMapClose={onMapClose} />}
         {openCard === 6 && <Card6 onMapClose={onMapClose} />}

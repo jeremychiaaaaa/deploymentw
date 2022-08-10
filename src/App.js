@@ -29,6 +29,12 @@ const ref= useRef({audio, sanctuaryAudio})
   const[musicPlay,setMusicPlay] = useState(false)
   const [stickyHeader,setStickyHeader] = useState(false)
 
+  {/*loading of dreammap avatars */}
+
+  const [loadAvatars,setLoadAvatars] = useState(false)
+
+
+
 const[sanctuaryMusicStart,setSanctuaryMusicStart] = useState(false)
 
   return (
@@ -40,7 +46,9 @@ const[sanctuaryMusicStart,setSanctuaryMusicStart] = useState(false)
            
             </Helmet>
    
-  <HeaderContext.Provider value={{phoneClicked,setPhoneClicked,musicPlay,setMusicPlay,stickyHeader,setStickyHeader,sanctuaryMusicStart,setSanctuaryMusicStart }}>
+  <HeaderContext.Provider value={{phoneClicked,setPhoneClicked,musicPlay,setMusicPlay,stickyHeader,setStickyHeader,
+    sanctuaryMusicStart,setSanctuaryMusicStart,
+    loadAvatars,setLoadAvatars }}>
     
  <Router>
          <Header ref={ref}/>

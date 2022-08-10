@@ -8,6 +8,8 @@ import {BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom'
 
 
 
+
+
 export const Header = React.forwardRef((props,ref) => {
 
 
@@ -40,7 +42,7 @@ export const Header = React.forwardRef((props,ref) => {
         }
       context.setStickyHeader(false)
       context.setMusicPlay(false)
-       console.log(click) 
+      
         ref.current.pause()
         ref.current.currentTime = 0
     } 
@@ -70,7 +72,21 @@ export const Header = React.forwardRef((props,ref) => {
         audio.current.play()
 
     }
+    
+    const dreamMapClick = () => {
+      if(phone){
+        context.setPhoneClicked(!context.phoneClicked)
+      }
 
+      context.setStickyHeader(false)
+      context.setMusicPlay(false)
+      
+        ref.current.pause()
+        ref.current.currentTime = 0
+
+        context.setLoadAvatars(true)
+
+    }
 
 
     
