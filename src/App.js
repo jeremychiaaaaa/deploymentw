@@ -14,9 +14,9 @@ import Sanctuary from './Components/SanctuaryPage/Sanctuary';
 
 import ManifestoV2 from './Components/ManifestoV2';
 import DreamMap from './Components/DreamMap';
-const faceOff = require('./Components/Hustle-Harder-Borrtex-AudioTrimm.mp3')
+const faceOff = require('./Components/Hustle-Harder-Softened-AudioTrim.mp3')
 
-const sanctuaryMusic = require('./Components/Cinematic-Nature-Ocean-Waves-Spl.mp3')
+const sanctuaryMusic = require('./Components/Ambient-Waves-softened.mp3')
 
 
 export const HeaderContext = React.createContext()

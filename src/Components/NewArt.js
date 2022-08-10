@@ -151,10 +151,10 @@ function handleTouchMove(evt) {
     <div style={{width:'100vw', height:'60px', backgroundColor:'white',position:'relative',display:'flex',marginTop:15,}}> 
 
   <div style={{width:'90%',display:'flex', justifyContent:'flex-end',textAlign:'right',margin:'0 auto',height:'fit-content',}}>
-    <span style={{...phoneStyle,wordBreak:'break-word'}}>
-    <span>10,200 unique avatars. Your KYN alter-egos. Experience The Sanctuary through them.</span>
+    <span style={{...phoneStyle,wordBreak:'break-word',fontFamily:'Smooch Sans',fontWeight:800}}>
+    <span>10,200 unique avatars. Your KYN alter-egos.<br/> Experience The Sanctuary through them.</span>
 <br/>
-Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…</span>
+Can’t keep those sneaky werewolves from shapeshifting.<br/> If only we knew when…</span>
    </div>
     </div>
     
@@ -267,7 +267,7 @@ Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
       
   <div style={{width:'fit-content', display:'flex', justifyContent:'center',alignItems:'center',textAlign:'right',whiteSpace:'wrap',lineHeight:'1.7rem'}}>
   <div style={{width:phone ? '90%' :'80%',display:'flex',justifyContent:'flex-end'}}>
-  <p style={{...phoneStyle,textAlign:'right',lineHeight:'1.3rem',fontFamily:'Smooch Sans',fontWeight:400,fontSize:phone ? '1.2rem':'1.3rem',marginRight:phone && '5%',}}>
+  <p style={{...phoneStyle,textAlign:'right',lineHeight:'1.3rem',fontFamily:'Smooch Sans',fontWeight:800,fontSize:phone ? '1.2rem':'1.3rem',marginRight:phone && '5%',}}>
   10,200 unique avatars. Your KYN alter-egos. Experience The Sanctuary through them.<br/>
   Can’t keep those sneaky werewolves from shapeshifting. If only we knew when…
   </p>

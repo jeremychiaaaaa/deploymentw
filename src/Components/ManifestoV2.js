@@ -154,7 +154,7 @@ To become the best versions of ourselves
 <br/>
 <p style={phoneStyle}>
     <span>Whatever our past is, it doesn't matter here.</span><br/>
-    <span>Here, it's a free start</span><br/>
+    <span>Here, it's a fresh start</span><br/>
     <span>Here, we are your Kyn.</span><br/>
     <span>Here, we are family</span><br/>
     <span >Welcome to the Sanctuary.</span>
@@ -217,7 +217,7 @@ To become the best versions of ourselves
 <br/>
 <p style={style}>
     <span>Whatever our past is, it doesn't matter here.</span><br/>
-    <span>Here, it's a free start</span><br/>
+    <span>Here, it's a fresh start</span><br/>
     <span>Here, we are your Kyn.</span><br/>
     <span>Here, we are family</span><br/><br/>
     <span style={{fontWeight:700,}}>Welcome to the Sanctuary.</span>
