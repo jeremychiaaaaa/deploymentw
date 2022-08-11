@@ -26,10 +26,10 @@ const art10 = require('./ArtAssets/art10.jpg')
 const art11 = require('./ArtAssets/art11.jpg')
 const art12 = require('./ArtAssets/art12.jpg')
 
-const newArt1 = require('./KYN Designed Avatar Collection D werewolf form (2).jpg')
-const newArt2 = require('./KYN Designed Avatar Collection D werewolf no hand (1).jpg')
-const avatar = require('./art_avatar_2.gif')
-const phoneAvatar = require('./kyn_phone_avatar.png')
+const newArt1 = require('../General Assets/KYN Designed Avatar Collection D werewolf form (2).jpg')
+const newArt2 = require('../General Assets/KYN Designed Avatar Collection D werewolf no hand (1).jpg')
+const avatar = require('../General Assets/art_avatar_2.gif')
+const phoneAvatar = require('../General Assets/kyn_phone_avatar.png')
 
 export default function NewArt(){
     const context = useContext(HeaderContext)

@@ -6,7 +6,7 @@ import styled, {keyframes} from 'styled-components'
 import WebFont from 'webfontloader';
 import { HeaderContext } from '../App';
 
-const muteIcon = require('./mute-icon-2.jpg')
+const muteIcon = require('../General Assets/mute-icon-2.jpg')
 
 
 const TEXTS = [
@@ -18,7 +18,7 @@ const TEXTS = [
     'wide-eyed dreamers',
     'freedom fighters'
 ]
-const place = require('./mainfesto_avatar.png')
+const place = require('../General Assets/mainfesto_avatar.png')
 export const  ManifestoV2 = React.forwardRef((props,ref) => {
   const[sticky,setSticky] = useState({paddingTop:'0px'})
     const [activeIndex,setActiveIndex] = useState(0)

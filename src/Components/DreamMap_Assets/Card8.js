@@ -48,7 +48,7 @@ const Card8 = ({onMapClose,img}) => {
    
      <span style={{...phone ? phoneStyle : style,display:'flex', justifyContent:'center', alignItems:'flex-start', flexDirection:'column',width:phone ? '90%':'90%',marginLeft:30}}>
     
-Our very own KYN pet, where we will adopt an animal, and<br/> fractionalise pictures of it.<br/>
+Our very own KYN pet, where we will adopt an animal, and{!phone&&<br/>} fractionalise pictures of it.<br/>
 
 <span style={{marginTop:10}}>This pet will be living in one of our Sanctuaries, where you can visit and play with it.</span>
 
