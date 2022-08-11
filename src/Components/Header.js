@@ -182,12 +182,12 @@ export const Header = React.forwardRef((props,ref) => {
         {context.phoneClicked && 
         <>
                 <div style={{display:'flex', flexDirection:'column', borderBottomWidth: '1px', width:'100%', marginLeft:'20px', borderBottomColor:'beige', paddingBottom:10}}>
-        <div style={{display:'flex', alignItems:'center',}}>
-            <a ><span style={phoneSubHead}>TWITTER</span></a>
+       
+            <a target="_blank" href='https://twitter.com/TheKynMovement' style={{display:'flex', alignItems:'center'}} ><span style={phoneSubHead}>TWITTER</span>
             <div className='media-svg' style={{position:'absolute',right:0, marginRight:20}}>
             <span class='icon-twitter'></span>
-      </div>
-            </div>
+      </div></a>
+            
      </div>
      <div style={{display:'flex', flexDirection:'column', borderBottomWidth: '1px', width:'100%', marginLeft:'20px', borderBottomColor:'beige', paddingBottom:10}}>
         <div style={{display:'flex', alignItems:'center',}}>
