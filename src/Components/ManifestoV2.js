@@ -114,7 +114,7 @@ export const  ManifestoV2 = React.forwardRef((props,ref) => {
     <div style={{width:'100vw', height:'110px', backgroundColor:'white',position:'relative',display:'flex', justifyContent:'flex-end'}}> 
 
 
-    <h2  style ={{...subHeaderStyle, fontSize:phone ? '2.2rem' : '4.4rem',color:'black',fontFamily:'Bree Serif',marginRight:40}}><span style={{fontFamily:'Bree Serif', fontWeight:100,opacity:0.2,fontSize:phone ? '2.2rem' : '4.4rem', }}>OUR</span>MANIFESTO</h2>
+    <h2  style ={{...subHeaderStyle, fontSize:phone ? '2.2rem' : '4.4rem',color:'black',fontFamily:'Bree Serif',marginRight:20,transform:'translateY(35px)'}}><span style={{fontFamily:'Bree Serif', fontWeight:100,opacity:0.2,fontSize:phone ? '2.2rem' : '4.4rem', }}>OUR</span>MANIFESTO</h2>
 
  
     </div>
