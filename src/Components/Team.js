@@ -106,14 +106,7 @@ let style={
     <span style={style}>Anime connoisseur</span>
     <span style={style}>Sleepy by 8pm. *Yawns*</span>
          <span style={{...style,textAlign:'center'}}>All bout' dem personal development gAinZ</span>
-      <div className='profileCard-icons'>
       
-        <div className='teamcard-svg'>
-       <a href='/'><span className='team-icon-twitter '></span></a>   
-
-        </div>
-         <span style={{...style, marginTop:0}}> @divineprophet25</span>
-      </div>
       </div>
     </SwiperSlide>
     <SwiperSlide>
@@ -126,35 +119,21 @@ let style={
     <span style={style}>uni dropout to-be :)</span>
     <span style={style}>#zuckerberg  #billgates</span>
          <span style={style}>coping mechanism: caffeine</span>
-      <div className='profileCard-icons'>
       
-        <div className='teamcard-svg'>
-       <a href='/'><span className='team-icon-twitter '></span></a>   
-
-        </div>
-         <span style={{...style, marginTop:0}}> @holyxaffinity</span>
-      </div>
       </div>
  
     </SwiperSlide>
     <SwiperSlide>
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
       <img src={ArtistImage} className='profilePicture' alt='Artist image'/>
-      <h1 style={subHeaderStyle}>Auxuris</h1>
+      <h1 style={subHeaderStyle}>Nico</h1>
      <h3 style={subHead}>LEAD ARTIST</h3>
     
  
     <span style={style}>I draw the shit that you see.</span>
     <span style={style}>Plays too much genshin/LOL</span>
          <span style={style}>Secretly a vampire.</span>
-      <div className='profileCard-icons'>
-      
-        <div className='teamcard-svg'>
-       <a href='/'><span className='team-icon-twitter '></span></a>   
-
-        </div>
-         <span style={{...style, marginTop:0}}> @auxuris </span>
-      </div>
+    
       </div>
     </SwiperSlide>
     <SwiperSlide>
@@ -167,14 +146,7 @@ let style={
     <span style={style}>The work is the work.</span>
     <span style={style}>MAMBA MENTALITY</span>
          <span style={style}>#ripkobe</span>
-      <div className='profileCard-icons'>
       
-        <div className='teamcard-svg'>
-       <a href='/'><span className='team-icon-twitter '></span></a>   
-
-        </div>
-         <span style={{...style, marginTop:0}}> @jem </span>
-      </div>
       </div>
     </SwiperSlide>
     <SwiperSlide>
@@ -188,14 +160,7 @@ let style={
     <span style={style}>probably still sleeping somewhere</span>
     <span style={style}>your friendly neighborhood mod :)</span>
     <span style={style}>that bans idiots from time to time</span>
-      <div className='profileCard-icons'>
       
-        <div className='teamcard-svg'>
-       <a href='/'><span className='team-icon-twitter '></span></a>   
-
-        </div>
-         <span style={{...style, marginTop:0}}> @headmod </span>
-      </div>
       </div>
     </SwiperSlide>
     <SwiperSlide>
@@ -210,14 +175,7 @@ let style={
     <span style={style}>probably still sleeping somewhere</span>
     <span style={style}>your friendly neighborhood mod :)</span>
     <span style={style}>that bans idiots from time to time</span>
-      <div className='profileCard-icons'>
       
-        <div className='teamcard-svg'>
-       <a href='/'><span className='team-icon-twitter '></span></a>   
-
-        </div>
-         <span style={{...style, marginTop:0}}> @headmod </span>
-      </div>
       </div>
     </SwiperSlide>
 
