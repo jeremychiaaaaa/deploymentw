@@ -105,7 +105,7 @@ let style={
  
     <span style={style}>Anime connoisseur</span>
     <span style={style}>Sleepy by 8pm. *Yawns*</span>
-         <span style={{...style,textAlign:'center'}}>All bout' dem personal development gAinZ</span>
+         <span style={{...style,textAlign:'center',paddingBottom:30}}>All bout' dem personal development gAinZ</span>
       
       </div>
     </SwiperSlide>
@@ -118,7 +118,7 @@ let style={
  
     <span style={style}>uni dropout to-be :)</span>
     <span style={style}>#zuckerberg  #billgates</span>
-         <span style={style}>coping mechanism: caffeine</span>
+         <span style={{...style,paddingBottom:30}}>coping mechanism: caffeine</span>
       
       </div>
  
@@ -132,7 +132,7 @@ let style={
  
     <span style={style}>I draw the shit that you see.</span>
     <span style={style}>Plays too much genshin/LOL</span>
-         <span style={style}>Secretly a vampire.</span>
+         <span style={{...style,paddingBottom:30}}>Secretly a vampire.</span>
     
       </div>
     </SwiperSlide>
@@ -145,7 +145,7 @@ let style={
  
     <span style={style}>The work is the work.</span>
     <span style={style}>MAMBA MENTALITY</span>
-         <span style={style}>#ripkobe</span>
+         <span style={{...style,paddingBottom:30}}}>#ripkobe</span>
       
       </div>
     </SwiperSlide>
@@ -159,7 +159,7 @@ let style={
  
     <span style={style}>probably still sleeping somewhere</span>
     <span style={style}>your friendly neighborhood mod :)</span>
-    <span style={style}>that bans idiots from time to time</span>
+    <span style={{...style,paddingBottom:30}}>that bans idiots from time to time</span>
       
       </div>
     </SwiperSlide>
@@ -174,7 +174,7 @@ let style={
  
     <span style={style}>probably still sleeping somewhere</span>
     <span style={style}>your friendly neighborhood mod :)</span>
-    <span style={style}>that bans idiots from time to time</span>
+    <span style={{...style,paddingBottom:30}}>that bans idiots from time to time</span>
       
       </div>
     </SwiperSlide>
