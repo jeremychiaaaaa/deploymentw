@@ -145,7 +145,7 @@ let style={
  
     <span style={style}>The work is the work.</span>
     <span style={style}>MAMBA MENTALITY</span>
-         <span style={{...style,paddingBottom:30}}}>#ripkobe</span>
+         <span style={{...style,paddingBottom:30}}>#ripkobe</span>
       
       </div>
     </SwiperSlide>
