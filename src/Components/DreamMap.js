@@ -9,21 +9,21 @@ import Card6 from './DreamMap_Assets/Card6.js'
 import Card7 from './DreamMap_Assets/Card7.js'
 import Card8 from './DreamMap_Assets/Card8.js'
 
-import image1 from './DreamMap_Assets/Avatars/web art dreammap bri main v4 (1).webp'
+import image1 from './DreamMap_Assets/Avatars/web art dreammap bri main.png'
 
-import image2 from './DreamMap_Assets/Avatars/web art dreammap bri irl sanctuaries.webp'
+import image2 from './DreamMap_Assets/Avatars/web art dreammap bri irl sanctuaries.png'
 
-import image3 from './DreamMap_Assets/Avatars/web art dreammap bri phy merch.webp'
+import image3 from './DreamMap_Assets/Avatars/web art dreammap bri phy merch.png'
 
-import image4 from './DreamMap_Assets/Avatars/web art dreammap bri community.webp'
+import image4 from './DreamMap_Assets/Avatars/web art dreammap bri community.png'
 
-import image5 from './DreamMap_Assets/Avatars/web art dreammap bri education.webp'
+import image5 from './DreamMap_Assets/Avatars/web art dreammap bri education.png'
 
-import image6 from './DreamMap_Assets/Avatars/web art dreammap bri tbe.webp'
+import image6 from './DreamMap_Assets/Avatars/web art dreammap bri tbe.png'
 
-import image7 from './DreamMap_Assets/Avatars/web art dreammap bri connecting people.webp'
+import image7 from './DreamMap_Assets/Avatars/web art dreammap bri connecting people.png'
 
-import image8 from './DreamMap_Assets/Avatars/web art dreammap bri animal.webp'
+import image8 from './DreamMap_Assets/Avatars/web art dreammap bri animal.png'
 
 import { ImageMap } from '@qiuz/react-image-map';
 import WebFont from 'webfontloader';
