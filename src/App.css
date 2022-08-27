@@ -421,7 +421,7 @@ padding-bottom:2rem;
 
 }
 .image-manifesto{
-    width:800px;
+    width:40%;
     display: flex;
     justify-content: flex-end;
    
@@ -435,14 +435,14 @@ padding-bottom:2rem;
 }
 
 .image-manifesto > img {
-    width:350px;
+    width:75%;
     height:700px;
     z-index: 10;
     object-fit:contain;
-    transform: scale(1.8);
+    transform: scale(1.25);
     position: relative;
     bottom:160px;
-    right:15px;
+    right:-5%;
 }
 .manifesto-card-v2-phone-content{
    display:flex;
