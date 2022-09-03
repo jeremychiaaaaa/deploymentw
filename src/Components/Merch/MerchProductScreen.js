@@ -84,7 +84,7 @@ export const MerchProductScreen = () => {
    
     >
     
-     <img src={ModelPlaceHolder} alt='Merch'   />
+     <img src={ModelPlaceHolder} alt='Merch' style={{objectFit:'contain', width:'100%',height:'auto'}}   />
      <img src={ModelPlaceHolder} alt='Merch'  />
      
     </Carousel>
