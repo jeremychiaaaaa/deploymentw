@@ -15,6 +15,7 @@ import { HeaderContext } from '../../App';
 const PhoneProductScreen = () => {
 const [quantity,setQuantity] = useState(1)
 const [sizeSelected, setSizeSelected] = useState(0)
+const context = useContext(HeaderContext)
     let stylee={
         fontWeight:400, fontSize:'1.5rem',fontFamily:'Smooch Sans',textAlign:'center',color:'black',marginTop:5
       }
@@ -50,7 +51,7 @@ const [sizeSelected, setSizeSelected] = useState(0)
 
 
   return (
-    <div style={{width:'100vw',height:'fit-content',display:'flex',flexDirection:'column'}}>
+    <div style={{width:'100vw',height:'fit-content',display:context.phoneClicked ? 'none' : 'flex', flexDirection:'column'}}>
             <div style={{width:'100%',height:'40%',}} className='phone-product-screen'> 
             <Carousel
     animation='slide'

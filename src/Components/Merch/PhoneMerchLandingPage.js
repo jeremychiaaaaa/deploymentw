@@ -4,8 +4,9 @@ import WebFont from 'webfontloader';
 import MerchPlaceHolder from './merch1.jpeg'
 import ModelPlaceHolder from './albert-dera-ILip77SbmOE-unsplash.jpg'
 
-
+import { HeaderContext } from '../../App';
 const PhoneMerchLandingPage = () => {
+    const context = useContext(HeaderContext)
     const navigation = useNavigate()
     let stylee={
         fontWeight:200, fontSize:'1.2rem',fontFamily:'Smooch Sans',textAlign:'center',color:'white'
@@ -27,7 +28,7 @@ const PhoneMerchLandingPage = () => {
     
     },[])
   return (
-    <div style={{display:'flex', flexDirection:'column', width:'100vw', height:'100vh'}}>
+    <div style={{display:context.phoneClicked ? 'none' : 'flex', flexDirection:'column', width:'100vw', height:'100vh'}}>
         
         <div style={{height:'75vh', width:'100vw', backgroundColor:'black', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
             <div style={{height:'65%', width:'100%',}}>

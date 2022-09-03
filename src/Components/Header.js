@@ -177,6 +177,8 @@ export const Header = React.forwardRef((props,ref) => {
            <NavLink to='/team' style={ phone ? phoneSubHead : ({isActive}) => isActive ? {
               textDecoration:"underline"} : {color: 'black',fontSize:'0.9rem',letterSpacing:'0.1rem' }
            }  onClick={handleClick}><span className={!phone && "tabs"}>TEAM</span></NavLink>
+           </div>
+           <div  style={phone ? borderStyle :a }>
            <NavLink to='/merch' style={ phone ? phoneSubHead : ({isActive}) => isActive ? {
               textDecoration:"underline"} : {color: 'black',fontSize:'0.9rem',letterSpacing:'0.1rem' }
            }  onClick={handleClick}><span className={!phone && "tabs"}>MERCH</span></NavLink>
