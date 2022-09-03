@@ -1157,7 +1157,7 @@ border:none;
     grid-column : span 7;
     height:100%;
     width:85%;
-
+    grid-row : span 2; 
    display: flex;
  transform: translateX(15%);
     align-items: center; 
