@@ -32,6 +32,7 @@ const SanctuaryImageCarouselThree = () => {
     <Carousel
     animation='slide'
     duration={400}
+   
     navButtonsAlwaysVisible={true}
     stopAutoPlayOnHover={false}
     NavButton={({onClick, className, style, next, prev}) => {

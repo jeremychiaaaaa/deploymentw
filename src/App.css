@@ -1112,5 +1112,66 @@ border:none;
 
 
 
+/* merch page */
+
+
+
+.product-1-image .css-1abc02a,
+.product-1-image .css-hn784z,
+.phone-product-screen .css-1abc02a,
+.phone-product-screen .css-hn784z
+{
+    display: none;
+}
+
+.product-1-image .css-1m9128y {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+
+.product-1-image {
+
+    height:100%;
+    width:100%;
+
+
+
+
+    margin:0 auto;
+    overflow: hidden;
+}
+.product-1 {
+    display: grid;
+    grid-template-columns : repeat(12,1fr);
+    column-gap: 2rem;
+    width:105%;
+   padding: 0 50px;
+   margin-top:50px;
+    padding-bottom:20px;
+    
+}
+.product-1-image-wrapper {
+    grid-column : span 7;
+    height:100%;
+    width:85%;
+
+   display: flex;
+ transform: translateX(15%);
+    align-items: center; 
+      justify-content: center;
+       
+}
+.product-1-content {
+    grid-column : span 5;
+    width:90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  
+}
 
 

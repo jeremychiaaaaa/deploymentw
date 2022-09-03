@@ -1,16 +1,16 @@
 import React, {useState, useRef} from 'react'
 import './App.css';
 import {Helmet} from "react-helmet";
-import { BrowserRouter as Router, Routes,Route,  } from 'react-router-dom';
+import { BrowserRouter as Router, Routes,Route, Outlet,  } from 'react-router-dom';
 import {Header} from './Components/Header'
 import HomePage from './Components/HomePage';
 
-
+import MerchLandingPage from './Components/Merch/MerchLandingPage';
 
 import NewArt from './Components/NewArt';
 import Team from './Components/Team';
 import Sanctuary from './Components/SanctuaryPage/Sanctuary';
-
+import { MerchProductScreen } from './Components/Merch/MerchProductScreen';
 
 import ManifestoV2 from './Components/ManifestoV2';
 import DreamMap from './Components/DreamMap';
@@ -28,7 +28,7 @@ const ref= useRef({audio, sanctuaryAudio})
   const [phoneClicked, setPhoneClicked] = useState(false)
   const[musicPlay,setMusicPlay] = useState(false)
   const [stickyHeader,setStickyHeader] = useState(false)
-
+  const [productChoose, setProductChoose] = useState('')
   {/*loading of dreammap avatars */}
 
   const [loadAvatars,setLoadAvatars] = useState(false)
@@ -48,7 +48,10 @@ const[sanctuaryMusicStart,setSanctuaryMusicStart] = useState(false)
    
   <HeaderContext.Provider value={{phoneClicked,setPhoneClicked,musicPlay,setMusicPlay,stickyHeader,setStickyHeader,
     sanctuaryMusicStart,setSanctuaryMusicStart,
-    loadAvatars,setLoadAvatars }}>
+    loadAvatars,setLoadAvatars,
+    productChoose,setProductChoose,
+    
+    }}>
     
  <Router>
          <Header ref={ref}/>
@@ -61,7 +64,12 @@ const[sanctuaryMusicStart,setSanctuaryMusicStart] = useState(false)
         <Route path='/dreammap' element={<DreamMap />}></Route>
         <Route path='/team' element={<Team />}></Route>
         <Route path='/art' element={<NewArt />} ></Route>
-
+        <Route path='/merch' element={<MerchLandingPage/>} />
+         
+          <Route path='/merch/Collection-1' element={<MerchProductScreen />} />
+         
+  
+        
       </Routes>
    
     </Router>
