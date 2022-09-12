@@ -1,4 +1,4 @@
-
+@import 'animate.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Smooch+Sans:wght@100&family=Work+Sans:ital,wght@0,100;0,900;1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&family=Dosis:wght@300;400&family=Playfair+Display:wght@400;700&display=swap');
 
@@ -1151,7 +1151,7 @@ border:none;
    padding: 0 50px;
    margin-top:50px;
     padding-bottom:20px;
-    
+
 }
 .product-1-image-wrapper {
     grid-column : span 7;
@@ -1174,4 +1174,26 @@ border:none;
   
 }
 
+.phone-active-product-screen {
+    z-index:-1;
+}
+input::placeholder {
+    font-family: Smooch Sans;
+}
+input[type=text],
+input[type=email]
+{
+    font-family:Smooch Sans;
+    font-weight:400;
+}
+.css-1s2u09g-control {
+    padding: 5px 0;
+    border-color: rgba(220,220,220,0.8);
+}
 
+.cart-modal {
+    animation:slideInRight 0.35s;
+}
+.phone-order-summary {
+    animation:fadeInDown 0.35s;
+}

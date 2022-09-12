@@ -3,11 +3,18 @@ import { Link , useNavigate, Outlet} from "react-router-dom";
 import WebFont from 'webfontloader';
 import MerchPlaceHolder from './merch1.jpeg'
 import ModelPlaceHolder from './albert-dera-ILip77SbmOE-unsplash.jpg'
-
+import useLocalStorage from './LocalStorage';
 import { HeaderContext } from '../../App';
 const PhoneMerchLandingPage = () => {
     const context = useContext(HeaderContext)
     const navigation = useNavigate()
+    const [lastClickedProduct,setLastClickedProduct] = useLocalStorage('last-clicked',
+    [{
+      id:'1',
+      title:'default'
+    }]
+    
+    )
     let stylee={
         fontWeight:200, fontSize:'1.2rem',fontFamily:'Smooch Sans',textAlign:'center',color:'white'
       }
@@ -49,7 +56,11 @@ const PhoneMerchLandingPage = () => {
                     <div key={i.id} 
                     style={{display:'flex', flexDirection:'column', cursor:'pointer', justifyContent:'center', alignItems:'center', width:'45%', height:'40%',}}
                   
-                    onClick={() => navigation(`/merch/${i.name}`)}
+                    onClick={() => {
+                        setLastClickedProduct(i.name)
+                      context.setProductName(i.name)
+                         navigation(`/merch/${i.name}`)
+                    }}
                     >
                         <img src={i.image} style={{height:'75%',width:'100%',objectFit:'cover' }} />
                         <span style={{...stylee, textAlign:'center', marginTop:'20px',color:'black',fontSize:'1.8rem',fontWeight:300}} >{i.name}</span>

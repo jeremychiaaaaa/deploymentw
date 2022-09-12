@@ -1,10 +1,11 @@
 import React, {useState, useRef} from 'react'
+import "@stripe/stripe-js"
 import './App.css';
 import {Helmet} from "react-helmet";
 import { BrowserRouter as Router, Routes,Route, Outlet,  } from 'react-router-dom';
 import {Header} from './Components/Header'
 import HomePage from './Components/HomePage';
-
+import {CheckOutSuccess} from './Components/Merch/CheckOutSuccess';
 import MerchLandingPage from './Components/Merch/MerchLandingPage';
 
 import NewArt from './Components/NewArt';
@@ -14,6 +15,7 @@ import { MerchProductScreen } from './Components/Merch/MerchProductScreen';
 
 import ManifestoV2 from './Components/ManifestoV2';
 import DreamMap from './Components/DreamMap';
+import CheckOutOne from './Components/Merch/CheckOutOne';
 const faceOff = require('./General Assets/Hustle-Harder-Softened-AudioTrim.mp3')
 
 const sanctuaryMusic = require('./General Assets/Ambient-Waves-softened.mp3')
@@ -28,7 +30,8 @@ const ref= useRef({audio, sanctuaryAudio})
   const [phoneClicked, setPhoneClicked] = useState(false)
   const[musicPlay,setMusicPlay] = useState(false)
   const [stickyHeader,setStickyHeader] = useState(false)
-  const [productChoose, setProductChoose] = useState('')
+  const [productChoose, setProductChoose] = useState(false)
+  const [productName,setProductName] = useState('')
   {/*loading of dreammap avatars */}
 
   const [loadAvatars,setLoadAvatars] = useState(false)
@@ -50,6 +53,7 @@ const[sanctuaryMusicStart,setSanctuaryMusicStart] = useState(false)
     sanctuaryMusicStart,setSanctuaryMusicStart,
     loadAvatars,setLoadAvatars,
     productChoose,setProductChoose,
+    productName,setProductName
     
     }}>
     
@@ -64,11 +68,12 @@ const[sanctuaryMusicStart,setSanctuaryMusicStart] = useState(false)
         <Route path='/dreammap' element={<DreamMap />}></Route>
         <Route path='/team' element={<Team />}></Route>
         <Route path='/art' element={<NewArt />} ></Route>
+            <Route path='/checkout-success' element={<CheckOutSuccess />} />
         <Route path='/merch' element={<MerchLandingPage/>} />
-         
+        <Route path='/merch/Collection-2' element={<MerchProductScreen />} />
           <Route path='/merch/Collection-1' element={<MerchProductScreen />} />
-         
-  
+          <Route path='/merch/checkout' element={<CheckOutOne />} />
+      
         
       </Routes>
    

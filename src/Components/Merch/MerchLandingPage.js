@@ -1,6 +1,7 @@
 import React, {useState,useEffect,useContext} from 'react'
 import { Link , useNavigate, Outlet} from "react-router-dom";
 import WebFont from 'webfontloader';
+import useLocalStorage from './LocalStorage';
 import MerchPlaceHolder from './merch1.jpeg'
 import ModelPlaceHolder from './albert-dera-ILip77SbmOE-unsplash.jpg'
 import { HeaderContext } from '../../App';
@@ -8,6 +9,13 @@ import PhoneMerchLandingPage from './PhoneMerchLandingPage';
 function MerchLandingPage() {
     
     const navigation = useNavigate()
+    const [lastClickedProduct,setLastClickedProduct] = useLocalStorage('last-clicked',
+    [{
+      id:'1',
+      title:'default'
+    }]
+    
+    )
     const[phone,setPhone] = useState(window.matchMedia("(max-width: 1060px)").matches)
     let stylee={
         fontWeight:200, fontSize:'1.2rem',fontFamily:'Smooch Sans',textAlign:'center',color:'white'
@@ -52,7 +60,12 @@ function MerchLandingPage() {
                     <div key={i.id} 
                     style={{display:'flex', flexDirection:'column', cursor:'pointer', justifyContent:'center', alignItems:'center', width:'20%', height:'400px',}}
                   
-                    onClick={() => navigation(`/merch/${i.name}`)}
+                    onClick={() => {
+                      setLastClickedProduct(i.name)
+                      context.setProductName(i.name)
+                      navigation(`/merch/${i.name}`)
+                    
+                    }}
                     >
                         <img src={i.image} style={{height:'75%',width:'100%',objectFit:'cover' }} />
                         <span style={{...stylee, textAlign:'center', marginTop:'20px',color:'black',fontSize:'1.8rem',fontWeight:300}} >{i.name}</span>
