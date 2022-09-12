@@ -153,7 +153,7 @@ cart.splice(index,1)
             </div>}  
              
                     
-             {displayCart.length > 1 && <div style={{ width:'100%',position:phone && 'absolute', bottom:phone && 0,display:'flex',zIndex:25,justifyContent:'center',alignItems:'center',
+             {displayCart.length > 1 && <div style={{ width:'100%',display:'flex',zIndex:25,justifyContent:'center',alignItems:'center',
                padding:15,cursor:'pointer',
                     
             
