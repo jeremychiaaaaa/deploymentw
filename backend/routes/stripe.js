@@ -33,8 +33,8 @@ router.post("/create-checkout-session", async (req, res) => {
       receipt_email: req.body.email
     },
 
-    success_url: 'https://musical-melomakarona-3cc7e7.netlify.app/checkout-success',
-    cancel_url: 'https://musical-melomakarona-3cc7e7.netlify.app/merch/checkout',
+    success_url: 'https://main--musical-melomakarona-3cc7e7.netlify.app/checkout-success',
+    cancel_url: 'https://main--musical-melomakarona-3cc7e7.netlify.app/merch/checkout',
   });
 
   // res.redirect(303, session.url);
