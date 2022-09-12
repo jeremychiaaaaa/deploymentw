@@ -28,10 +28,7 @@ router.post("/create-checkout-session", async (req, res) => {
 
     line_items,
     mode: "payment",
-    payment_intent_data: {
-      //this email will only be sent when it is in live mode (can test before the launch w live mode)
-      receipt_email: req.body.email
-    },
+  
 
     success_url: 'https://main--musical-melomakarona-3cc7e7.netlify.app/checkout-success',
     cancel_url: 'https://main--musical-melomakarona-3cc7e7.netlify.app/merch/checkout',
