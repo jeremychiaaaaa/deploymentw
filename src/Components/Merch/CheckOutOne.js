@@ -108,7 +108,7 @@ let totalTemp = []
     successUrl:`${window.location.origin}/success`,
     cancelUrl:`${window.location.origin}/cancel`
   }
-  const url = "https://kyn-merch.herokuapp.com";
+  const url = "https://kyn-merch.herokuapp.com/api";
 
   const redirectToCheckOut =  () => {
    axios.post(`${url}/stripe/create-checkout-session`,{

@@ -21,7 +21,7 @@ app.use(function(req, res, next) {
 app.use("/api/stripe", stripe);
 
 app.get("/", (req, res) => {
-  res.send("Welcome our to online shop API...",port);
+  res.status(200).send("Welcome our to online shop API...");
 });
 
 
