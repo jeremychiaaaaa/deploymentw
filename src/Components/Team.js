@@ -12,10 +12,13 @@ import { EffectCoverflow, Pagination } from "swiper";
 
 import FounderImage from './TeamImages/founders-image.png'
 import FounderImage1 from './TeamImages/founders-image-2.png'
+import HelanaImage from './TeamImages/helena image.png'
+import KoswiImage from './TeamImages/koswi image.png'
+import NaufalImage from './TeamImages/naufal image.png'
 import ArtistImage from './TeamImages/artist-image.png'
 import CoderImage from './TeamImages/coder-image.jpeg'
-import Mod1 from './TeamImages/bot-image.png'
-import Mod2 from './TeamImages/bot-image-2.png'
+import Mod1 from './TeamImages/tom image.png'
+import Mod2 from './TeamImages/jerry image.png'
 function Team() {
   const[phone,setPhone] = useState(window.matchMedia("(max-width: 1060px)").matches)
   const context = useContext(HeaderContext)
@@ -139,7 +142,7 @@ let style={
     </SwiperSlide>
     <SwiperSlide>
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
-      <img src={Mod1} className='profilePicture' alt='Mod 1 image' />
+      <img src={HelanaImage} className='profilePicture' alt='Helena image' />
       <h1 style={subHeaderStyle}>Helena</h1>
      <h3 style={subHead}>LEAD ARTIST</h3>
   
@@ -166,7 +169,7 @@ let style={
     </SwiperSlide>
     <SwiperSlide>
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
-      <img src={Mod1} className='profilePicture' alt='Mod 1 image' />
+      <img src={KoswiImage} className='profilePicture' alt='Koswi image' />
       <h1 style={subHeaderStyle}>Koswi</h1>
      <h3 style={subHead}>ARTIST</h3>
   
@@ -181,7 +184,7 @@ let style={
     </SwiperSlide>
     <SwiperSlide>
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
-      <img src={Mod1} className='profilePicture' alt='Mod 1 image' />
+      <img src={NaufalImage} className='profilePicture' alt='Naufal image' />
       <h1 style={subHeaderStyle}>Naofaro</h1>
      <h3 style={subHead}>ARTIST</h3>
   
