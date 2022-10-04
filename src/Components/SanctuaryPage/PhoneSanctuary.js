@@ -159,13 +159,16 @@ spending most of our time.</p>
                    <p style={{height:'100vh',display:'flex',flexDirection:'column',}}><span style={phoneStyle}>Sale Price : 2,700,000 USD</span>
                    <br/>
                     <span style={phoneStyle}>No. of Bedrooms: 15</span><br/>
-                    <span style={{...stylee,display:'flex', flexDirection:'row',gap:5 }}>●<span>These are 3 interconnected villas<br/> (5 bedrooms each)</span></span>
-           <br/>
+              
                     <span style={{...phoneStyle,width:'90%',}}>Location: <br/>
            <br/>
                       <span style={{...phoneStyle,marginLeft:30,width:'90%',display:"flex", flexDirection:'column'}}>
-                      <span style={{display:'flex', flexDirection:'row',gap:5 }}>●<span>Bang Po, Koh Samui, Thailand</span></span><br/>
-                      <span style={{display:'flex', flexDirection:'row',gap:5 }}>●<span>[Other info: in the process of asking from owner]</span></span>
+                      <span style={{display:'flex', flexDirection:'row',gap:5 }}>●<span>2min drive to Bang Po Beach, famous for cheap and tasty seafood restaurants.</span></span><br/>
+                      <span style={{display:'flex', flexDirection:'row',gap:5 }}>●<span>3 minutes drive to Ban Tai beach (shallow water and soft sand).</span></span><br/>
+                  
+                      <span style={{display:'flex', flexDirection:'row',gap:5 }}>●<span>7 minutes drive to the famous Fisherman’s Village and The Wharf.</span></span><br/>
+                  
+                      <span style={{display:'flex', flexDirection:'row',gap:5 }}>●<span>12 minutes drive to the famous Chaweng Beach, and Central Festival shopping mall.</span></span>
 
                       </span>
                     </span></p> 

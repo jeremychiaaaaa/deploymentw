@@ -13,18 +13,18 @@ import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import { useSwipeable } from 'react-swipeable';
-const art1 = require('./ArtAssets/art1.jpg')
-const art2 = require('./ArtAssets/art2.jpg')
+const art1 = require('./ArtAssets/art10.jpg')
+const art2 = require('./ArtAssets/art8.jpg')
 const art3 = require('./ArtAssets/art3.jpg')
-const art4 = require('./ArtAssets/art4.jpg')
+const art4 = require('./ArtAssets/art12.jpg')
 const art5 = require('./ArtAssets/art5.jpg')
-const art6 = require('./ArtAssets/art6.jpg')
+const art6 = require('./ArtAssets/art4.jpg')
 const art7 = require('./ArtAssets/art7.jpg')
-const art8 = require('./ArtAssets/art8.jpg')
+const art8 = require('./ArtAssets/art2.jpg')
 const art9 = require('./ArtAssets/art9.jpg')
-const art10 = require('./ArtAssets/art10.jpg')
+const art10 = require('./ArtAssets/art1.jpg')
 const art11 = require('./ArtAssets/art11.jpg')
-const art12 = require('./ArtAssets/art12.jpg')
+const art12 = require('./ArtAssets/art6.jpg')
 
 const newArt1 = require('../General Assets/KYN Designed Avatar Collection D werewolf form (2).jpg')
 const newArt2 = require('../General Assets/KYN Designed Avatar Collection D werewolf no hand (1).jpg')

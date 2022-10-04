@@ -103,9 +103,9 @@ let style={
      <h3 style={subHead}>FOUNDER</h3>
     
  
-    <span style={style}>Anime connoisseur</span>
-    <span style={style}>Sleepy by 8pm. *Yawns*</span>
-         <span style={{...style,textAlign:'center',paddingBottom:30}}>All bout' dem personal development gAinZ</span>
+    <span style={style}>passionate about life, people and all things exciting</span>
+    <span style={style}>sleepy by 9pm. *Yawns*</span>
+         <span style={{...style,textAlign:'center',paddingBottom:30}}>all bout' dem personal development gAinZ</span>
       
       </div>
     </SwiperSlide>
@@ -116,26 +116,14 @@ let style={
      <h3 style={subHead}>FOUNDER</h3>
     
  
-    <span style={style}>uni dropout to-be :)</span>
-    <span style={style}>#zuckerberg  #billgates</span>
-         <span style={{...style,paddingBottom:30}}>coping mechanism: caffeine</span>
+    <span style={style}>gotta beat the man in the mirror</span>
+    <span style={style}>4 hours sleeping giant</span>
+         <span style={{...style,paddingBottom:30}}>coping mechanism: Caffeine</span>
       
       </div>
  
     </SwiperSlide>
-    <SwiperSlide>
-    <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
-      <img src={ArtistImage} className='profilePicture' alt='Artist image'/>
-      <h1 style={subHeaderStyle}>Nico</h1>
-     <h3 style={subHead}>LEAD ARTIST</h3>
     
- 
-    <span style={style}>I draw the shit that you see.</span>
-    <span style={style}>Plays too much genshin/LOL</span>
-         <span style={{...style,paddingBottom:30}}>Secretly a vampire.</span>
-    
-      </div>
-    </SwiperSlide>
     <SwiperSlide>
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
       <img src={CoderImage} className='profilePicture' alt='Coder image'/>
@@ -143,9 +131,66 @@ let style={
      <h3 style={subHead}>TECH LEAD</h3>
     
  
-    <span style={style}>The work is the work.</span>
+    <span style={style}>the work is the work</span>
     <span style={style}>MAMBA MENTALITY</span>
          <span style={{...style,paddingBottom:30}}>#ripkobe</span>
+      
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+    <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
+      <img src={Mod1} className='profilePicture' alt='Mod 1 image' />
+      <h1 style={subHeaderStyle}>Helena</h1>
+     <h3 style={subHead}>LEAD ARTIST</h3>
+  
+    
+ 
+    <span style={style}>things are always better with a warm cup of tea! 🫖</span>
+    <span style={{...style,paddingBottom:30}}>I enjoy nature walks and drawing in my cosy corner!</span>
+  
+      
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+    <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
+      <img src={ArtistImage} className='profilePicture' alt='Artist image'/>
+      <h1 style={subHeaderStyle}>Nico</h1>
+     <h3 style={subHead}>SENIOR ARTIST</h3>
+    
+ 
+    <span style={style}>I draw the shit that you see</span>
+    <span style={style}>plays too much genshin/LOL</span>
+         <span style={{...style,paddingBottom:30}}>secretly a vampire</span>
+    
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+    <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
+      <img src={Mod1} className='profilePicture' alt='Mod 1 image' />
+      <h1 style={subHeaderStyle}>Koswi</h1>
+     <h3 style={subHead}>ARTIST</h3>
+  
+    
+ 
+    <span style={style}>grew up playing Assassin's Creed and Diablo 2</span>
+    <span style={style}>long drives are my therapy</span>
+    <span style={{...style,paddingBottom:30}}>sashimi yumz</span>
+  
+      
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+    <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
+      <img src={Mod1} className='profilePicture' alt='Mod 1 image' />
+      <h1 style={subHeaderStyle}>Naofaro</h1>
+     <h3 style={subHead}>ARTIST</h3>
+  
+    
+ 
+    <span style={style}>my cat is in charge, I just pay the rent</span>
+
+    <span style={{...style,paddingBottom:30}}>simplicity is the key to happiness</span>
+  
       
       </div>
     </SwiperSlide>

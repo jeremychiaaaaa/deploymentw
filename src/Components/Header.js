@@ -178,11 +178,7 @@ export const Header = React.forwardRef((props,ref) => {
               textDecoration:"underline"} : {color: 'black',fontSize:'0.9rem',letterSpacing:'0.1rem' }
            }  onClick={handleClick}><span className={!phone && "tabs"}>TEAM</span></NavLink>
            </div>
-           <div  style={phone ? borderStyle :a }>
-           <NavLink to='/merch' style={ phone ? phoneSubHead : ({isActive}) => isActive ? {
-              textDecoration:"underline"} : {color: 'black',fontSize:'0.9rem',letterSpacing:'0.1rem' }
-           }  onClick={handleClick}><span className={!phone && "tabs"}>MERCH</span></NavLink>
-           </div>
+          
         {context.phoneClicked && 
         <>
                 <div style={{display:'flex', flexDirection:'column', borderBottomWidth: '1px', width:'100%', marginLeft:'20px', borderBottomColor:'beige', paddingBottom:10}}>

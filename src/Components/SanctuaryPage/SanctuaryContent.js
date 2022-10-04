@@ -27,7 +27,7 @@ export const SanctuaryContent = () => {
       window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
     },[])
     return(
-        <div style={{width:'100%', maxWidth:'90rem', height:'fit-content', display:'flex', flexDirection:'column', justifyContent: 'center', alignItems: 'center'}}>
+        <div style={{width:'100%', maxWidth:'90rem', height:'100%', display:'flex', flexDirection:'column', justifyContent: 'center', alignItems: 'center'}}>
         <div className='sanctuary-content-grid'>
        
 
@@ -117,13 +117,19 @@ spending most of our time.</span>
                     <br/>
                     <span style={stylee}>No. of Bedrooms: 15</span>
                     <br/>
-                    <span style={{...stylee,display:'flex', flexDirection:'row',gap:5 }}>●<span>These are 3 interconnected villas<br/> (5 bedrooms each)</span></span>
+               
 
                     <span style={{...stylee,width:'90%',}}>Location: <br/><br/>
            
-                      <span style={{...stylee,marginLeft:30,width:'90%',display:"flex", flexDirection:'column'}}>
-                      <span style={{display:'flex', flexDirection:'row',gap:5 }}>●<span>Bang Po, Koh Samui, Thailand</span></span><br/>
-                      <span style={{display:'flex', flexDirection:'row',gap:5 }}>●<span>[Other info: in the process of asking from owner]</span></span>
+                      <span style={{...stylee,marginLeft:30,width:'90%',display:"flex", flexDirection:'column'}}>  
+                         <span style={{...stylee,display:'flex', flexDirection:'row',gap:5 }}>●<span>2min drive to Bang Po Beach, famous for cheap and tasty seafood restaurants.</span></span>
+                      <span style={{display:'flex', flexDirection:'row',gap:5 }}>●<span>3 minutes drive to Ban Tai beach (shallow water and soft sand).</span></span><br/>
+                  
+                      <span style={{display:'flex', flexDirection:'row',gap:5 }}>●<span>7 minutes drive to the famous Fisherman’s Village and The Wharf.</span></span><br/>
+                  
+                      <span style={{display:'flex', flexDirection:'row',gap:5 }}>●<span>12 minutes drive to the famous Chaweng Beach, and Central Festival shopping mall.</span>
+
+                      </span>
                    <br/><br/>
 
 

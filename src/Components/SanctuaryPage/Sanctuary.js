@@ -46,8 +46,8 @@ useEffect(() => {
   window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
 },[])
   return (
- <div style={{height:'100vh',overflowX:!phone && 'hidden'}}>
-    <div className='sanctuary' style={{height:! phone && '100%'}}>
+ <div style={{height:'100%',overflowX:!phone && 'hidden'}}>
+    <div className='sanctuary' >
       
     
    

@@ -68,11 +68,7 @@ const[sanctuaryMusicStart,setSanctuaryMusicStart] = useState(false)
         <Route path='/dreammap' element={<DreamMap />}></Route>
         <Route path='/team' element={<Team />}></Route>
         <Route path='/art' element={<NewArt />} ></Route>
-            <Route path='/checkout-success' element={<CheckOutSuccess />} />
-        <Route path='/merch' element={<MerchLandingPage/>} />
-        <Route path='/merch/Collection-2' element={<MerchProductScreen />} />
-          <Route path='/merch/Collection-1' element={<MerchProductScreen />} />
-          <Route path='/merch/checkout' element={<CheckOutOne />} />
+  
       
         
       </Routes>
@@ -87,3 +83,11 @@ const[sanctuaryMusicStart,setSanctuaryMusicStart] = useState(false)
 
 
 export default App;
+
+
+
+/*          <Route path='/checkout-success' element={<CheckOutSuccess />} />
+        <Route path='/merch' element={<MerchLandingPage/>} />
+        <Route path='/merch/Collection-2' element={<MerchProductScreen />} />
+          <Route path='/merch/Collection-1' element={<MerchProductScreen />} />
+          <Route path='/merch/checkout' element={<CheckOutOne />} />*/
