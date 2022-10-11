@@ -441,8 +441,8 @@ padding-bottom:2rem;
     object-fit:contain;
     transform: scale(1.25);
     position: relative;
-    bottom:160px;
-    right:-5%;
+    bottom:200px;
+    right:-3%;
 }
 .manifesto-card-v2-phone-content{
    display:flex;
@@ -459,7 +459,7 @@ height:100%;
     width:60vw;
     position:absolute !important;
     z-index: 10 !important;
-left:-100px !important;
+left:-120px !important;
 top:50px !important;
 }
 

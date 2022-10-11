@@ -18,7 +18,7 @@ const TEXTS = [
     'wide-eyed dreamers',
     'freedom fighters'
 ]
-const place = require('../General Assets/mainfesto_avatar.png')
+const place = require('../General Assets/Avatar2_Updated.png')
 export const  ManifestoV2 = React.forwardRef((props,ref) => {
   const[sticky,setSticky] = useState({paddingTop:'0px'})
     const [activeIndex,setActiveIndex] = useState(0)
