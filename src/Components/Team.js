@@ -106,7 +106,7 @@ let style={
      <h3 style={subHead}>FOUNDER</h3>
     
  
-    <span style={style}>passionate about life, people and all things exciting</span>
+    <span style={{...style,textAlign:phone && 'center'}}>passionate about life, people and{phone && <br/>} all things exciting</span>
     <span style={style}>sleepy by 9pm. *Yawns*</span>
          <span style={{...style,textAlign:'center',paddingBottom:30}}>all bout' dem personal development gAinZ</span>
       
@@ -148,8 +148,8 @@ let style={
   
     
  
-    <span style={style}>things are always better with a warm cup of tea! 🫖</span>
-    <span style={{...style,paddingBottom:30}}>I enjoy nature walks and drawing in my cosy corner!</span>
+    <span style={{...style,textAlign:phone && 'center'}}>things are always better with a warm {phone && <br/>} cup of tea! 🫖</span>
+    <span style={{...style,paddingBottom:30,textAlign:phone && 'center'}}>I enjoy nature walks and drawing{phone && <br/>} in my cosy corner!</span>
   
       
       </div>
@@ -175,7 +175,7 @@ let style={
   
     
  
-    <span style={style}>grew up playing Assassin's Creed and Diablo 2</span>
+    <span  style={{...style,textAlign:phone && 'center'}}>grew up playing Assassin's Creed{phone && <br/>} and Diablo 2</span>
     <span style={style}>long drives are my therapy</span>
     <span style={{...style,paddingBottom:30}}>sashimi yumz</span>
   
