@@ -163,6 +163,7 @@ spending most of our time.</p>
                     <span style={{...phoneStyle,width:'90%',}}>Location: <br/>
            <br/>
                       <span style={{...phoneStyle,marginLeft:30,width:'90%',display:"flex", flexDirection:'column'}}>
+                      ● Bang Po, Koh Samui, Thailand<br/><br/>
                       <span style={{display:'flex', flexDirection:'row',gap:5 }}>●<span>2min drive to Bang Po Beach, famous for cheap and tasty seafood restaurants.</span></span><br/>
                       <span style={{display:'flex', flexDirection:'row',gap:5 }}>●<span>3 minutes drive to Ban Tai beach (shallow water and soft sand).</span></span><br/>
                   
