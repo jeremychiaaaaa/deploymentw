@@ -28,7 +28,7 @@ const art12 = require('./ArtAssets/art6.jpg')
 
 const newArt1 = require('../General Assets/KYN Designed Avatar Collection D werewolf form (2).jpg')
 const newArt2 = require('../General Assets/KYN Designed Avatar Collection D werewolf no hand (1).jpg')
-const avatar = require('../General Assets/art_avatar_2.gif')
+const avatar = require('../General Assets/art_avatar.gif')
 const phoneAvatar = require('../General Assets/kyn_phone_avatar.png')
 
 export default function NewArt(){
