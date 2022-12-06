@@ -112,34 +112,7 @@ let style={
       
       </div>
     </SwiperSlide>
-    <SwiperSlide>
-    <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
-      <img src={FounderImage1} className='profilePicture' alt='Founder 2 image' />
-      <h1 style={subHeaderStyle}>Holyxaffinity</h1>
-     <h3 style={subHead}>FOUNDER</h3>
-    
- 
-    <span style={style}>gotta beat the man in the mirror</span>
-    <span style={style}>4 hours sleeping giant</span>
-         <span style={{...style,paddingBottom:30}}>coping mechanism: Caffeine</span>
-      
-      </div>
- 
-    </SwiperSlide>
-    
-    <SwiperSlide>
-    <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
-      <img src={CoderImage} className='profilePicture' alt='Coder image'/>
-      <h1 style={subHeaderStyle}>Jem</h1>
-     <h3 style={subHead}>TECH LEAD</h3>
-    
- 
-    <span style={style}>the work is the work</span>
-    <span style={style}>MAMBA MENTALITY</span>
-         <span style={{...style,paddingBottom:30}}>#ripkobe</span>
-      
-      </div>
-    </SwiperSlide>
+
     <SwiperSlide>
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
       <img src={HelanaImage} className='profilePicture' alt='Helena image' />
@@ -154,19 +127,7 @@ let style={
       
       </div>
     </SwiperSlide>
-    <SwiperSlide>
-    <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
-      <img src={ArtistImage} className='profilePicture' alt='Artist image'/>
-      <h1 style={subHeaderStyle}>Nico</h1>
-     <h3 style={subHead}>SENIOR ARTIST</h3>
     
- 
-    <span style={style}>I draw the shit that you see</span>
-    <span style={style}>plays too much genshin/LOL</span>
-         <span style={{...style,paddingBottom:30}}>secretly a vampire</span>
-    
-      </div>
-    </SwiperSlide>
     <SwiperSlide>
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
       <img src={KoswiImage} className='profilePicture' alt='Koswi image' />
@@ -195,6 +156,47 @@ let style={
     <span style={{...style,paddingBottom:30}}>simplicity is the key to happiness</span>
   
       
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+    <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
+      <img src={FounderImage1} className='profilePicture' alt='Founder 2 image' />
+      <h1 style={subHeaderStyle}>Holyxaffinity</h1>
+     <h3 style={subHead}>honorary founder</h3>
+    
+ 
+    <span style={style}>gotta beat the man in the mirror</span>
+    <span style={style}>4 hours sleeping giant</span>
+         <span style={{...style,paddingBottom:30}}>coping mechanism: Caffeine</span>
+      
+      </div>
+ 
+    </SwiperSlide>
+    
+    <SwiperSlide>
+    <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
+      <img src={CoderImage} className='profilePicture' alt='Coder image'/>
+      <h1 style={subHeaderStyle}>Jem</h1>
+     <h3 style={subHead}>honorary tech lead</h3>
+    
+ 
+    <span style={style}>the work is the work</span>
+    <span style={style}>MAMBA MENTALITY</span>
+         <span style={{...style,paddingBottom:30}}>#ripkobe</span>
+      
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+    <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
+      <img src={ArtistImage} className='profilePicture' alt='Artist image'/>
+      <h1 style={subHeaderStyle}>Nico</h1>
+     <h3 style={subHead}>honorary artist</h3>
+    
+ 
+    <span style={style}>I draw the shit that you see</span>
+    <span style={style}>plays too much genshin/LOL</span>
+         <span style={{...style,paddingBottom:30}}>secretly a vampire</span>
+    
       </div>
     </SwiperSlide>
     <SwiperSlide>

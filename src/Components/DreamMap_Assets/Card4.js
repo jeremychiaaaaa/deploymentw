@@ -54,7 +54,7 @@ const Card4 = ({onMapClose,img}) => {
   <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4,marginLeft:phone && 2}}>Music Album<br/></span>
 
   <span style={{marginLeft:30}}>Our very own KYN Album - an album to rally us together.<br/> </span>
-<span style={{marginLeft:30, marginTop:10}} >We will provide the initial KYN Anthem and the community will help to create the rest of the album.</span>
+<span style={{marginLeft:30, marginTop:10}} >Created hand-in-hand with the community.</span>
  <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4,marginLeft:phone && 2}}>Fully-Committed Mods
 <br/></span>
 <span style={{marginLeft:30}}>The human embodiment of the KYN brand. Mods will be the foundation for the wholesome family culture in KYN.</span>

@@ -70,10 +70,10 @@ const Card2 = ({onMapClose,img}) => {
 <span style={{marginLeft:30,marginTop:10}}> Rather than a virtual land sale, why not have a real life one?</span>
 
 
- <span style={{marginLeft:30,marginTop:10}}>Land that is part of our (future) castle's estate will be{!phone&&<br/>} fractionalised  into NFT fractions.</span> 
+ <span style={{marginLeft:30,marginTop:10}}>Land that is part of our estates will be fractionalised into NFT fractions.</span> 
 
 
-<span style={{marginLeft:30,marginTop:10}}> Holders of these fractions could vote on how they want to{!phone&&<br/>} develop that piece of land.</span>
+<span style={{marginLeft:30,marginTop:10}}> Holders of these fractions could have special voting rights.</span>
 
  
      </span>
