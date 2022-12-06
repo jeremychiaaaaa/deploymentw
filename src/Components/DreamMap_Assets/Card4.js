@@ -4,6 +4,7 @@ import {motion,} from 'framer-motion'
 
 const Card4 = ({onMapClose,img}) => {
     const[phone,setPhone] = useState(window.matchMedia("(max-width: 1060px)").matches)
+    const heart = '<3'
     useEffect(() => {
         window.matchMedia("(max-width: 1060px)").addEventListener('change', e => setPhone(e.matches))
         WebFont.load({
@@ -54,7 +55,7 @@ const Card4 = ({onMapClose,img}) => {
   <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4,marginLeft:phone && 2}}>Music Album<br/></span>
 
   <span style={{marginLeft:30}}>Our very own KYN Album - an album to rally us together.<br/> </span>
-<span style={{marginLeft:30, marginTop:10}} >Created hand-in-hand with the community.</span>
+<span style={{marginLeft:30, marginTop:10}} >Created hand-in-hand with the community {heart}</span>
  <span style={{...subHead, fontSize:phone ?'1.05rem' :'1.3rem',letterSpacing:phone ? 0 :3.4,marginLeft:phone && 2}}>Fully-Committed Mods
 <br/></span>
 <span style={{marginLeft:30}}>The human embodiment of the KYN brand. Mods will be the foundation for the wholesome family culture in KYN.</span>

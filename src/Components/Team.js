@@ -162,7 +162,7 @@ let style={
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
       <img src={FounderImage1} className='profilePicture' alt='Founder 2 image' />
       <h1 style={subHeaderStyle}>Holyxaffinity</h1>
-     <h3 style={subHead}>honorary founder</h3>
+     <h3 style={subHead}>HONORARY FOUNDER</h3>
     
  
     <span style={style}>gotta beat the man in the mirror</span>
@@ -177,7 +177,7 @@ let style={
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
       <img src={CoderImage} className='profilePicture' alt='Coder image'/>
       <h1 style={subHeaderStyle}>Jem</h1>
-     <h3 style={subHead}>honorary tech lead</h3>
+     <h3 style={subHead}>HONORARY TECH LEAD</h3>
     
  
     <span style={style}>the work is the work</span>
@@ -190,7 +190,7 @@ let style={
     <div className={phone ? 'profileCard-Phone' : 'profileCard'}>
       <img src={ArtistImage} className='profilePicture' alt='Artist image'/>
       <h1 style={subHeaderStyle}>Nico</h1>
-     <h3 style={subHead}>honorary artist</h3>
+     <h3 style={subHead}>HONORARY ARTIST</h3>
     
  
     <span style={style}>I draw the shit that you see</span>
